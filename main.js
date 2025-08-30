@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Initial display: show first section or section from hash
-    let initialHash = window.location.hash || '#' + sections[0].id;
-    showSection(initialHash);
-
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
