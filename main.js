@@ -1,20 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    let homeLink = document.querySelector('.artist-name');
     let navLinks = document.querySelectorAll('.navbar-right a');
     let sections = document.querySelectorAll('main > section');
 
     function showSection(hash) {
+        if (hash) {
+            document.body.classList.remove('bg-image');
+        }        
         sections.forEach(section => {
             section.hidden = (hash !== '#' + section.id);
         });
     }
+
+    homeLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('bg-image');
+        window.location.hash = '';
+    });
 
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             let targetHash = this.getAttribute('href');
             window.location.hash = targetHash;
-            showSection(targetHash);
         });
     });
 
@@ -38,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add a click event listener to each link
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
-
             mobileMenu.classList.remove('active');
             burgerMenu.classList.remove('is-active');
         });

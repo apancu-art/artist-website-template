@@ -6,6 +6,14 @@
     line-height: 1.6;
 }
 
+.bg-image {
+    background-image: url('images/gugg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
