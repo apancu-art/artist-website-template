@@ -1,0 +1,172 @@
+﻿body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.navbar-left .artist-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .8px;
+    text-transform: none;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    margin-left: 1rem;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+    .navbar-right a:hover {
+        text-decoration: none;
+    }
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burger-menu span {
+    width: 36px;
+    height: 3px;
+    background: black;
+    margin: 3px 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth animation */
+}
+
+    /* State when the 'is-active' class is present (forms the 'x') */
+    .burger-menu.is-active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Move and rotate the top span */
+    }
+
+    .burger-menu.is-active span:nth-child(2) {
+        opacity: 0; /* Hide the middle span */
+    }
+
+    .burger-menu.is-active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Move and rotate the bottom span */
+    }
+
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.header-menu-nav-item {
+    margin: 1rem 0;
+}
+
+    .header-menu-nav-item a {
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+main {
+    max-width: 800px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cv-grid {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-weight: 200;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1rem;
+    letter-spacing: .4px;
+    font-size: .8rem;
+}
+
+a {
+    color: black;
+    width: fit-content;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+.exhibitions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.exhibition-block {
+    background: #f4f4f4;
+    border-left: 4px solid #111;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 800px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .cv-grid {
+        grid-template-columns: 1fr;
+    }
+}
