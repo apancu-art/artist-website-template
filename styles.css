@@ -4,7 +4,6 @@
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 200;
     line-height: 1.6;
-    min-height: 100vh;
 }
 
 .bg-image {
@@ -48,27 +47,35 @@
     flex-direction: column;
     cursor: pointer;
     margin-left: auto;
+    z-index: 2;
+    position: relative;
+    width: 36px;
+    height: 18px;
+    justify-content: space-between;
 }
 
 .burger-menu span {
     width: 36px;
     height: 3px;
     background: black;
-    margin: 3px 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth animation */
+    transition: transform 0.3s, opacity 0.3s;
 }
 
     /* State when the 'is-active' class is present (forms the 'x') */
     .burger-menu.is-active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg); /* Move and rotate the top span */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
     }
 
     .burger-menu.is-active span:nth-child(2) {
-        opacity: 0; /* Hide the middle span */
+        opacity: 0;
     }
 
     .burger-menu.is-active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg); /* Move and rotate the bottom span */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
     }
 
 
@@ -81,7 +88,7 @@
     height: 100%;
     background: white;
     z-index: 1;
-    padding: 20vh 10vw;
+    padding: 8rem 10vw;
 }
 
 .mobile-menu.active {
