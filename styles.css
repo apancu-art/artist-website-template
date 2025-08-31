@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 2rem;
 }
 
 .navbar-left .artist-name {
@@ -30,10 +30,10 @@
 
 .navbar-right a {
     text-decoration: none;
-    margin-left: 1rem;
-    letter-spacing: .6px;
+    margin-left: 2rem;
+    letter-spacing: .8px;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
     .navbar-right a:hover {
@@ -165,7 +165,7 @@ a {
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .navbar-right {
         display: none;
     }
