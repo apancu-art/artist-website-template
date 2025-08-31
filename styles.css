@@ -130,32 +130,6 @@ section {
     gap: 2rem;
 }
 
-.pt-1 {
-    padding-top: 1rem;
-}
-.pt-2 {
-    padding-top: 2rem;
-}
-.pb-1 {
-    padding-bottom: 1rem;
-}
-.pb-2 {
-    padding-bottom: 2rem;
-}
-
-.mt-1 {
-    margin-top: 1rem;
-}
-.mt-2 {
-    margin-top: 2rem;
-}
-.mb-1 {
-    margin-bottom: 1rem;
-}
-.mb-2 {
-    margin-bottom: 2rem;
-}
-
 h5 {
     font-weight: 200;
     margin-block-start: 0;
@@ -170,11 +144,11 @@ p {
     line-height: 1rem;
     letter-spacing: .4px;
     font-size: .8rem;
-    color: darkslategray;
+    color: dimgray;
 }
 
 a {
-    color: darkslategray;
+    color: dimgray;
     width: fit-content;
     text-decoration: none;
 }
@@ -198,6 +172,12 @@ a {
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
+@media (min-width: 600px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
 @media (max-width: 600px) {
     .navbar-right {
         display: none;
@@ -209,5 +189,13 @@ a {
 
     .cv-grid {
         flex-direction: column;
+    }
+
+    p {
+        color: black;
+    }
+
+    a {
+        color: black;
     }
 }
