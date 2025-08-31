@@ -1,9 +1,10 @@
 ﻿body {
-    margin: 0;
+    margin: 0 10vw;
     background: #fff;
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 200;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 .bg-image {
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0rem;
 }
 
 .navbar-left .artist-name {
@@ -198,6 +199,6 @@ a {
     }
 
     .cv-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 }
