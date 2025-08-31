@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
+            for (let link of this.parentNode.children) {
+                link.style.color = link == this ? 'black' : '';
+                link.style.fontWeight = link == this ? 300 : '';
+            }
             let targetHash = this.getAttribute('href');
             window.location.hash = targetHash;
         });
