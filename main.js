@@ -55,4 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
             burgerMenu.classList.remove('is-active');
         });
     });
+
+    showSection(window.location.hash);
 });
