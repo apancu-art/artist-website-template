@@ -4,10 +4,11 @@
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 200;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 .bg-image {
-    background-image: url('images/gugg4.jpg');
+    background-image: url('images/faro.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,8 +38,6 @@
     text-transform: uppercase;
     font-size: 1rem;
 }
-
-
 
 .burger-menu {
     display: none;
@@ -120,13 +119,13 @@ section {
     padding-bottom: 2rem;
 }
 
-.cv-grid {
+.column-grid {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
-.cv-grid > * {
+.column-grid > * {
     width: 50%;
 }
 
@@ -149,7 +148,7 @@ p {
 }
 
 a {
-    color: dimgray;
+    color: black;
     width: fit-content;
     text-decoration: none;
 }
@@ -198,7 +197,7 @@ a {
 
 @media (max-width: 1000px) {
 
-    .cv-grid {
+    .column-grid {
         flex-direction: column;
     }
 }
@@ -207,4 +206,18 @@ a {
     .mobile-menu {
         display: none !important;
     }
+}
+.contact-image {
+    background-image: url('images/stairs.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-image {
+    overflow: hidden;
+}
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
