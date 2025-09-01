@@ -154,6 +154,14 @@ a {
     text-decoration: none;
 }
 
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
 .exhibitions-list {
     display: flex;
     flex-direction: column;
@@ -202,10 +210,11 @@ a {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
     .column-grid {
         flex-direction: column;
+        gap: 0;
     }
 }
 
