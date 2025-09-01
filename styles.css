@@ -188,8 +188,10 @@ a {
     object-fit: contain;
 }
 
-.first-column {
+.grid-column {
+    width: 100%;
     max-width: 600px;
+    text-align: justify;
 }
 
 @media (max-width: 700px) {
@@ -209,7 +211,7 @@ a {
         gap: 0;
     }
 
-    .first-column {
+    .grid-column {
         max-width: none;
     }
 }
