@@ -145,6 +145,10 @@ section {
     max-width: 380px;
 }
 
+.last-col {
+    margin-right: 20%;
+}
+
 .image-column {
     width: 100%;
     max-width: 600px;
