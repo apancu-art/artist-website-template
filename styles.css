@@ -125,7 +125,7 @@ section {
 .column-grid {
     display: flex;
     /*justify-content: space-between;*/
-    gap: 50px;
+    gap: 100px;
 }
 
 .column-grid > * {
