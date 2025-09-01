@@ -181,24 +181,6 @@ a {
     object-fit: contain;
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
-
-    h5 {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-
-    a {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-}
-
 @media (max-width: 600px) {
     .navbar-right {
         display: none;
