@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-right {
-    margin-right: 25%;
+    margin-right: 20%;
     justify-content: space-between;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-right a {
-    margin-left: 2rem;
+    margin-left: 2.4rem;
     font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: .8px;
@@ -135,7 +135,7 @@ section {
 .image-column {
     width: 100%;
     max-width: 600px;
-    margin-right: 25%;
+    margin-right: 20%;
 }
 
 h5 {
@@ -188,6 +188,10 @@ a {
     object-fit: contain;
 }
 
+.first-column {
+    max-width: 600px;
+}
+
 @media (max-width: 700px) {
     .navbar-right {
         display: none;
@@ -203,6 +207,10 @@ a {
     .column-grid {
         flex-direction: column;
         gap: 0;
+    }
+
+    .first-column {
+        max-width: none;
     }
 }
 
