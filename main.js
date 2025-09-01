@@ -2,19 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let homeLink = document.querySelector('.artist-name');
     let navLinks = document.querySelectorAll('.navbar a');
-    let sections = document.querySelectorAll('main > section');
+    let sections = document.querySelectorAll('main > .sections > section');
 
     function showSection(hash) {
         if (hash) {
             document.body.classList.remove('bg-image');
-            for (let link of navLinks) {
-                link.style.fontWeight = '';
-            }
-        } else {
-            for (let link of navLinks) {
-                link.style.fontWeight = link.classList.contains('artist-name') ? 500 : 400;
-            }
-        }       
+        }
+        navLinks.forEach(link => {
+            link.style.fontWeight = hash ? '' : link.classList.contains('artist-name') ? 500 : 400;
+        });             
         sections.forEach(section => {
             section.hidden = (hash !== '#' + section.id);
         });
@@ -48,6 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let mobileMenu = document.querySelector('.mobile-menu');
         mobileMenu.classList.toggle('active');
         burgerMenu.classList.toggle('is-active');
+        if (mobileMenu.classList.contains('active')) {
+            sections.forEach(section => {
+                section.hidden = true;
+            });
+        } else {
+            showSection(window.location.hash);
+        }
     });
 
     // Select all the links inside the mobile menu
