@@ -124,12 +124,11 @@ section {
 
 .column-grid {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    gap: 5rem;
 }
 
-.column-grid > * {
-    width: 50%;
+.bio {
+    max-width: 600px;
 }
 
 h5 {
