@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
             burgerMenu.classList.remove('is-active');
+            showSection(window.location.hash);
         });
     });
 
