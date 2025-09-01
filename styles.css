@@ -215,6 +215,10 @@ a {
         flex-direction: column;
         gap: 0;
     }
+
+    .bio {
+        max-width: none;
+    }
 }
 
 @media (min-width: 600px) {
