@@ -67,4 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     showSection(window.location.hash);
+
+    //window.addEventListener('resize', function () {
+    //    if (window.location.hash == '#cv') {
+    //        let navbarRight = document.querySelector('.navbar-right');
+    //        let lastCol = document.querySelector('.column-grid > div:last-child');
+    //        if (navbarRight && lastCol) {
+    //            navbarRight.style.marginLeft = Math.min(lastCol.offsetLeft, 80) + 'px';
+    //        }
+    //    }
+    //});
 });
