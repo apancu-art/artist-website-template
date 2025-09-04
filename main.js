@@ -92,9 +92,6 @@ async function loadArtworks() {
     const modalBackdrop = document.createElement('div');
     modalBackdrop.className = 'modal-backdrop';
 
-    //const modalContent = document.createElement('div');
-    //modalContent.className = 'modal-content';
-
     const closeButton = document.createElement('span');
     closeButton.className = 'close-btn';
     closeButton.innerHTML = 'X'; // HTML entity for 'x'
@@ -102,11 +99,17 @@ async function loadArtworks() {
     const modalContainer = document.createElement('div');
     modalContainer.className = 'modal-artwork-container';
 
-    const modalInfo = document.createElement('div');
-    modalInfo.className = 'artwork-info';
+    // Create navigation buttons
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'nav-btn prev-btn';
+    prevBtn.innerHTML = '&lt;'; // HTML entity for <
 
-    //modalContent.appendChild(modalContainer);
-    //modalContent.appendChild(modalInfo);
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'nav-btn next-btn';
+    nextBtn.innerHTML = '&gt;'; // HTML entity for >
+
+    modalBackdrop.appendChild(prevBtn);
+    modalBackdrop.appendChild(nextBtn);
     modalBackdrop.appendChild(modalContainer);
     modalBackdrop.appendChild(closeButton);
     body.appendChild(modalBackdrop);
@@ -121,6 +124,20 @@ async function loadArtworks() {
         }
     });
 
+    prevBtn.addEventListener('click', (event) => {
+        let index = event.target.getAttribute("index");
+        const artworkGrid = document.getElementsByClassName('artwork-grid');
+        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');;
+        updateModalContent(element[0]);
+    });
+
+    nextBtn.addEventListener('click', (event) => {
+        let index = event.target.getAttribute("index");
+        const artworkGrid = document.getElementsByClassName('artwork-grid');
+        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');;
+        updateModalContent(element[0]);
+    });
+
     try {
         const response = await fetch('/images/works/manifest.json');
         const entries = await response.json();
@@ -131,27 +148,8 @@ async function loadArtworks() {
 
         document.querySelectorAll('.artwork-container').forEach(function (element) {
 
-            element.addEventListener('click', (event) => {
-
-                // Find the corresponding artwork data using the index
-                const clickedArtwork = event.target;
-
-                // Update modal content with the clicked artwork's data
-                const index = Array.from(artworkGrid[0].children).indexOf(element.parentElement);
-                const entry = entries[index];
-                const artworkImage = element.querySelector('.artwork-image');
-                
-                modalContainer.innerHTML = '';
-                const modalImage = document.createElement('img');
-                modalImage.src = artworkImage.src;
-                modalImage.alt = artworkImage.alt;
-                modalImage.className = 'modal-artwork-image';
-                modalContainer.appendChild(modalImage);
-                modalContainer.style.backgroundColor = clickedArtwork.placeholderColor;
-                modalInfo.textContent = `${entry.info.title}, ${entry.info.year}. ${entry.info.medium} - ${entry.info.dimensions}`;
-
-                // Display the modal
-                modalBackdrop.style.display = 'flex';
+            element.addEventListener('click', () => {
+                updateModalContent(element);
             });
         });
 
@@ -190,4 +188,34 @@ function createArtworkElement(filename, artworkInfo, container) {
     artworkOuterContainer.appendChild(infoDiv);
 
     container.appendChild(artworkOuterContainer);
+}
+
+function updateModalContent(element) {
+
+    const artworkGrid = document.getElementsByClassName('artwork-grid');
+    const modalBackdrop = document.getElementsByClassName('modal-backdrop');
+    const modalContainer = document.getElementsByClassName('modal-artwork-container');
+    const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
+    const nextBtn = document.getElementsByClassName('nav-btn next-btn');
+
+    // Update modal content with the clicked artwork's data
+    const index = Array.from(artworkGrid[0].children).indexOf(element.parentElement);
+    const artworkImage = element.querySelector('.artwork-image');
+    const modalImage = document.createElement('img');
+
+    modalContainer[0].innerHTML = '';
+
+    modalImage.src = artworkImage.src;
+    modalImage.alt = artworkImage.alt;
+    modalImage.className = 'modal-artwork-image';
+
+    modalContainer[0].appendChild(modalImage);
+
+    prevBtn[0].setAttribute("index", Math.max(0, index - 1));
+    nextBtn[0].setAttribute("index", Math.min(artworkGrid[0].children.length - 1, index + 1));
+    prevBtn[0].style.display = index === 0 ? 'none' : 'block';
+    nextBtn[0].style.display = index === artworkGrid[0].children.length - 1 ? 'none' : 'block';
+
+    // Display the modal
+    modalBackdrop[0].style.display = 'flex';
 }

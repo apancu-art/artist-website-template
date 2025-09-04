@@ -43,6 +43,28 @@ body {
     text-transform: uppercase;
 }
 
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    font-weight: 100;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+
+.prev-btn {
+    left: 50px;
+}
+
+.next-btn {
+    right: 50px;
+}
+
 .burger-menu {
     display: none;
     flex-direction: column;
