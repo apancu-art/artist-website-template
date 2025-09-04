@@ -143,7 +143,35 @@ async function loadArtworks() {
         const entries = await response.json();
 
         for (const entry of entries) {
-            createArtworkElement(entry.filename, entry.info, artworkGrid[0]);
+            if (entry.works) {
+                for (const work of entry.works) {
+                    createArtworkElement(work.filename, work.info, artworkGrid[0]);
+                }
+            } else if (entry.cv) {
+                if (entry.cv.bio) {
+                    const bio = document.getElementsByClassName('bio');
+                    for (const part of entry.cv.bio) {
+                        const element = document.createElement('p');
+                        element.className = 'pb-1';
+                        element.textContent = part;
+                        bio[0].appendChild(element);
+                    }
+                    const location = document.getElementsByClassName('location');
+                    let element = document.createElement('p');
+                    element.textContent = `Born in ${entry.cv.birthyear} in ${entry.cv.birthplace}`;
+                    location[0].appendChild(element);
+                    element = document.createElement('p');
+                    element.textContent = `Resides and works in ${entry.cv.residence}`;
+                    location[0].appendChild(element);
+
+                    const education = document.getElementsByClassName('education');
+                    for (const edu of entry.cv.education) {
+                        const element = document.createElement('p');
+                        element.textContent = edu;
+                        education[0].appendChild(element);
+                    }
+                }
+            }
         }
 
         document.querySelectorAll('.artwork-container').forEach(function (element) {

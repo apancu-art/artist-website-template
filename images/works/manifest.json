@@ -1,56 +1,89 @@
 [
-{
-	"filename": "bibi.jpg",
-	"info": {
-		"title": "Bibi",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "4x6"
+	{
+		"works": [
+			{
+				"filename": "bibi.jpg",
+				"info": {
+					"title": "Bibi",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "4x6"
+				}
+			},
+			{
+				"filename": "cosmic path.jpg",
+				"info": {
+					"title": "Cosmic Path",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "4x12"
+				}
+			},
+			{
+				"filename": "after the rain.jpg",
+				"info": {
+					"title": "After the Rain",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "4x12"
+				}
+			},
+			{
+				"filename": "the study.jpg",
+				"info": {
+					"title": "The Study",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "4x12"
+				}
+			},
+			{
+				"filename": "on the path.jpg",
+				"info": {
+					"title": "On the Path",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "4x12"
+				}
+			},
+			{
+				"filename": "clearing.jpg",
+				"info": {
+					"title": "Clearing",
+					"year": 2024,
+					"medium": "Patina on steel",
+					"dimensions": "8x12"
+				}
+			}
+		]
+	},
+	{
+		"cv": {
+			"name": "Andrei",
+			"surname": "Pancu",
+			"birthyear": "1968",
+			"birthplace": "Bucharest, Romania",
+			"residence": "Ottawa, Canada",
+			"education": [
+					"1992-4: Minor in Fine Arts, Université de Montréal, Canada"
+				],
+				"bio"
+				:
+				[
+					"Andrei Pancu is a contemporary artist residing and working in Ottawa, Canada. Born in 1968 in Bucharest, Romania, Pancu is known for inducing patinas on ferrous metals and impressing regular patterns to create layered compositions of abstract, complex forms. His ambiguous motifs allude at times to the natural, at other times to the man-made. The theme is dynamic equilibrium, events suspended in time. The tone is subdued, serene, contemplative. Heavily influenced by the natural properties of ferrous metals, the color palette is predominantly earthy, featuring deep browns, ochres, and muted reds. Pancu crafts his own frames out of mild steel to create free-standing as well as wall-mounted works.",
+					
+					"The interplay of opposing forces is both the subject and the process of Andrei Pancu's work. In his series, 'Entropy and Order', started in 2024, order can be found in the conscious, willful intent with which Pancu applies stamps and masks to temper the flow of the ever-evolving, chaotic patina. The struggle to impose order against a relentless, albeit slow-moving, tide that aims to do just the opposite is a reflection of the human condition. Pancu pits these opposing forces against each other and puts them into dialectical play. Promoting interpretive engagement over narrative clarity, Pancu designs his patterns with incomplete, ambiguous signifiers with the explicit intent of evoking the participation of the subconscious in filling in the missing references with scenes and events from personal experience.",
+					
+					"Andrei Pancu studied Fine Arts at the Université de Montréal."
+				],
+				"awards"
+				:
+				[
+				],
+				"exhibitions"
+				:
+				[
+				]
+		}
 	}
-},
-{
-	"filename": "cosmic path.jpg",
-	"info": {
-		"title": "Cosmic Path",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "4x12"
-	}
-},
-{
-	"filename": "after the rain.jpg",
-	"info": {
-		"title": "After the Rain",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "4x12"
-	}
-},
-{
-	"filename": "the study.jpg",
-	"info": {
-		"title": "The Study",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "4x12"
-	}
-},
-{
-	"filename": "on the path.jpg",
-	"info": {
-		"title": "On the Path",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "4x12"
-	}
-},
-{
-	"filename": "clearing.jpg",
-	"info": {
-		"title": "Clearing",
-		"year": 2024,
-		"medium": "Patina on steel",
-		"dimensions": "8x12"
-	}
-}
 ]
