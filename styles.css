@@ -122,6 +122,53 @@ section {
     padding-bottom: 2rem;
 }
 
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.artwork-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artwork-frame {
+    border: 4px solid #333; /* The "frame" around the artwork */
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    aspect-ratio: 1 / 1.2; /* Maintain a consistent aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.artwork-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc; /* Placeholder color, can be changed via JS */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.artwork-info {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
 .column-grid {
     display: flex;
     /*justify-content: space-between;*/

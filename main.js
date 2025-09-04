@@ -77,4 +77,83 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+
+    // A sample array of artwork data
+    const artworks = [
+        {
+            title: "Abstract Composition",
+            year: 2023,
+            medium: "Oil on canvas",
+            dimensions: "24x36 in",
+            placeholderColor: "#555555" // Dark grey
+        },
+        {
+            title: "Untitled",
+            year: 2022,
+            medium: "Acrylic on wood panel",
+            dimensions: "18x24 in",
+            placeholderColor: "#000000" // Black
+        },
+        {
+            title: "Morning Glow",
+            year: 2024,
+            medium: "Mixed media",
+            dimensions: "30x40 in",
+            placeholderColor: "#FFC0CB" // Pink
+        },
+        {
+            title: "Deep Sea",
+            year: 2021,
+            medium: "Digital print",
+            dimensions: "16x20 in",
+            placeholderColor: "#008080" // Teal
+        },
+        {
+            title: "Earth Tones",
+            year: 2023,
+            medium: "Oil on canvas",
+            dimensions: "20x20 in",
+            placeholderColor: "#6B4226" // Brown
+        },
+        {
+            title: "Starry Night",
+            year: 2020,
+            medium: "Acrylic on linen",
+            dimensions: "36x48 in",
+            placeholderColor: "#000080" // Navy Blue
+        }
+    ];
+
+    // Get the grid container element
+    const artworkGrid = document.getElementsByClassName('artwork-grid');
+
+    // Loop through the artworks array and create an element for each
+    artworks.forEach(artwork => {
+        // Create the main container for a single artwork
+        const artworkContainer = document.createElement('div');
+        artworkContainer.className = 'artwork-container';
+
+        // Create the frame and placeholder
+        const artworkFrame = document.createElement('div');
+        artworkFrame.className = 'artwork-frame';
+
+        const artworkPlaceholder = document.createElement('div');
+        artworkPlaceholder.className = 'artwork-placeholder';
+        artworkPlaceholder.textContent = 'Artwork Placeholder';
+        artworkPlaceholder.style.backgroundColor = artwork.placeholderColor; // Set the color dynamically
+
+        artworkFrame.appendChild(artworkPlaceholder);
+
+        // Create the info text
+        const artworkInfo = document.createElement('div');
+        artworkInfo.className = 'artwork-info';
+        artworkInfo.textContent = `${artwork.title}, ${artwork.year}. ${artwork.medium} — ${artwork.dimensions}.`;
+
+        // Append all parts to the main container
+        artworkContainer.appendChild(artworkFrame);
+        artworkContainer.appendChild(artworkInfo);
+
+        // Append the complete artwork container to the grid
+        artworkGrid[0].appendChild(artworkContainer);
+    });
 });
