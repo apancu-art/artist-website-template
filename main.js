@@ -129,6 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Loop through the artworks array and create an element for each
     artworks.forEach(artwork => {
+
+        // Create the main container for a single artwork
+        const artworkOuterContainer = document.createElement('div');
+        artworkOuterContainer.className = 'artwork-outer-container';
+
         // Create the main container for a single artwork
         const artworkContainer = document.createElement('div');
         artworkContainer.className = 'artwork-container';
@@ -151,9 +156,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Append all parts to the main container
         artworkContainer.appendChild(artworkFrame);
-        artworkContainer.appendChild(artworkInfo);
+        artworkOuterContainer.appendChild(artworkContainer);
+        artworkOuterContainer.appendChild(artworkInfo);
 
         // Append the complete artwork container to the grid
-        artworkGrid[0].appendChild(artworkContainer);
+        artworkGrid[0].appendChild(artworkOuterContainer);
     });
 });
