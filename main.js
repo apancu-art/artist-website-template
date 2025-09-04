@@ -84,7 +84,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Load artworks from images/works folder
 async function loadArtworks() {
+
     const artworkGrid = document.getElementsByClassName('artwork-grid');
+    const body = document.body;
+
+    // Create the modal HTML elements once
+    const modalBackdrop = document.createElement('div');
+    modalBackdrop.className = 'modal-backdrop';
+
+    //const modalContent = document.createElement('div');
+    //modalContent.className = 'modal-content';
+
+    const closeButton = document.createElement('span');
+    closeButton.className = 'close-btn';
+    closeButton.innerHTML = 'X'; // HTML entity for 'x'
+
+    const modalContainer = document.createElement('div');
+    modalContainer.className = 'modal-artwork-container';
+
+    const modalInfo = document.createElement('div');
+    modalInfo.className = 'artwork-info';
+
+    //modalContent.appendChild(modalContainer);
+    //modalContent.appendChild(modalInfo);
+    modalBackdrop.appendChild(modalContainer);
+    modalBackdrop.appendChild(closeButton);
+    body.appendChild(modalBackdrop);
+
+    closeButton.addEventListener('click', () => {
+        modalBackdrop.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modalBackdrop) {
+            modalBackdrop.style.display = 'none';
+        }
+    });
 
     try {
         const response = await fetch('/images/works/manifest.json');
@@ -93,6 +128,33 @@ async function loadArtworks() {
         for (const entry of entries) {
             createArtworkElement(entry.filename, entry.info, artworkGrid[0]);
         }
+
+        document.querySelectorAll('.artwork-container').forEach(function (element) {
+
+            element.addEventListener('click', (event) => {
+
+                // Find the corresponding artwork data using the index
+                const clickedArtwork = event.target;
+
+                // Update modal content with the clicked artwork's data
+                const index = Array.from(artworkGrid[0].children).indexOf(element.parentElement);
+                const entry = entries[index];
+                const artworkImage = element.querySelector('.artwork-image');
+                
+                modalContainer.innerHTML = '';
+                const modalImage = document.createElement('img');
+                modalImage.src = artworkImage.src;
+                modalImage.alt = artworkImage.alt;
+                modalImage.className = 'modal-artwork-image';
+                modalContainer.appendChild(modalImage);
+                modalContainer.style.backgroundColor = clickedArtwork.placeholderColor;
+                modalInfo.textContent = `${entry.info.title}, ${entry.info.year}. ${entry.info.medium} - ${entry.info.dimensions}`;
+
+                // Display the modal
+                modalBackdrop.style.display = 'flex';
+            });
+        });
+
     } catch (error) {
         console.error('Error loading artworks:', error);
     }
@@ -120,7 +182,7 @@ function createArtworkElement(filename, artworkInfo, container) {
 
     const infoDiv = document.createElement('div');
     infoDiv.className = 'artwork-info';
-    infoDiv.textContent = `${artworkInfo.title}, ${artworkInfo.year}. ${artworkInfo.medium} - ${artworkInfo.dimensions}.`;
+    infoDiv.textContent = `${artworkInfo.title}, ${artworkInfo.year}. ${artworkInfo.medium} - ${artworkInfo.dimensions}`;
 
 
     artworkContainer.appendChild(artworkFrame);
