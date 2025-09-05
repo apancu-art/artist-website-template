@@ -386,3 +386,26 @@ a {
         letter-spacing: .8px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #111;
+        color: #fff;
+    }
+    
+    .mobile-menu {
+        background: #111;
+    }
+    
+    .burger-menu span {
+        background: white;
+    }
+    
+    .exhibition-block {
+        background: #222;
+        border-left-color: #fff;
+    }
+    
+    p {
+        color: #ccc;
+    }
+}
