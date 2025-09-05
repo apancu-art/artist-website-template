@@ -305,3 +305,28 @@ function updateModalContent(element) {
             if (nextBtn) nextBtn.click();
         }
     });
+    // Touch swipe navigation for modal
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    document.addEventListener('touchstart', function(event) {
+        touchStartX = event.changedTouches[0].screenX;
+    });
+    
+    document.addEventListener('touchend', function(event) {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            // Swipe left - next
+            const nextBtn = document.querySelector('.next-btn');
+            if (nextBtn) nextBtn.click();
+        }
+        if (touchEndX > touchStartX + 50) {
+            // Swipe right - previous
+            const prevBtn = document.querySelector('.prev-btn');
+            if (prevBtn) prevBtn.click();
+        }
+    }
