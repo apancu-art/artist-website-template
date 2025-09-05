@@ -56,12 +56,12 @@
 							}
 						},
 						{
-							"filename": "clearing.jpg",
+							"filename": "on the path brown.jpg",
 							"info": {
-								"title": "Clearing",
+								"title": "On the path brown",
 								"year": 2024,
 								"medium": "Patina on steel",
-								"dimensions": "8x12"
+								"dimensions": "4x12"
 							}
 						},
 						{
@@ -74,39 +74,12 @@
 							}
 						},
 						{
-							"filename": "aliens.jpg",
+							"filename": "battle at sea.jpg",
 							"info": {
-								"title": "Aliens",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "4x6"
-							}
-						},
-						{
-							"filename": "battle.jpg",
-							"info": {
-								"title": "Battle",
+								"title": "Battle at Sea",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "6x8"
-							}
-						},
-						{
-							"filename": "bibi full.jpg",
-							"info": {
-								"title": "Bibi full",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "4x6"
-							}
-						},
-						{
-							"filename": "big squid.jpg",
-							"info": {
-								"title": "Big squid",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
 							}
 						},
 						{
@@ -137,15 +110,6 @@
 							}
 						},
 						{
-							"filename": "bull full.jpg",
-							"info": {
-								"title": "Bull full",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
-							}
-						},
-						{
 							"filename": "bull top.jpg",
 							"info": {
 								"title": "Bull top",
@@ -155,30 +119,12 @@
 							}
 						},
 						{
-							"filename": "bull.jpg",
+							"filename": "watching woods.jpg",
 							"info": {
-								"title": "Bull",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "6x8"
-							}
-						},
-						{
-							"filename": "by the campfire.jpg",
-							"info": {
-								"title": "By the campfire",
+								"title": "Watching Woods",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "8x10"
-							}
-						},
-						{
-							"filename": "clearing dark.jpg",
-							"info": {
-								"title": "Clearing dark",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x12"
 							}
 						},
 						{
@@ -188,15 +134,6 @@
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "6x8"
-							}
-						},
-						{
-							"filename": "cubic detail.jpg",
-							"info": {
-								"title": "Cubic detail",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "6x6"
 							}
 						},
 						{
@@ -278,15 +215,6 @@
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "8x10"
-							}
-						},
-						{
-							"filename": "on the path brown.jpg",
-							"info": {
-								"title": "On the path brown",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "4x12"
 							}
 						},
 						{
@@ -389,9 +317,18 @@
 							}
 						},
 						{
-							"filename": "simmers too.jpg",
+							"filename": "swimmers too.jpg",
 							"info": {
-								"title": "Simmers too",
+								"title": "Swimmers too",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "big squid.jpg",
+							"info": {
+								"title": "Big squid",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "8x10"

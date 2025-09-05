@@ -295,3 +295,13 @@ function updateModalContent(element) {
     // Display the modal
     modalBackdrop[0].style.display = 'flex';
 }
+    // Keyboard navigation for modal
+    document.addEventListener('keyup', function(event) {
+        if (event.key === 'ArrowLeft') {
+            const prevBtn = document.querySelector('.prev-btn');
+            if (prevBtn) prevBtn.click();
+        } else if (event.key === 'ArrowRight') {
+            const nextBtn = document.querySelector('.next-btn');
+            if (nextBtn) nextBtn.click();
+        }
+    });
