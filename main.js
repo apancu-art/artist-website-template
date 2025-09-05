@@ -152,7 +152,7 @@ async function loadArtworks() {
                     categories[0].appendChild(element);
                     if (category.files) {
                         for (const work of category.files) {
-                            createArtworkElement(work.filename, work.info, artworkGrid[0]);                            
+                            createArtworkElement(work.filename, work.info, artworkGrid[0]);
                         }
                     }
                 }
@@ -180,6 +180,30 @@ async function loadArtworks() {
                         education[0].appendChild(element);
                     }
                 }
+            } else if (entry.contact) {
+                if (entry.contact.links) {
+                    const links = document.getElementsByClassName('links');
+                    for (const link of entry.contact.links) {
+                        const element = document.createElement('p');
+                        const anchor = document.createElement('a');
+                        anchor.href = link.url;
+                        anchor.textContent = link.label;
+                        element.appendChild(anchor);
+                        links[0].appendChild(element);
+                    }
+                }
+                const studio = document.getElementsByClassName('studio');
+                let element = document.createElement('p');
+                element.textContent = entry.contact.studio.street;
+                studio[0].appendChild(element);
+                element = document.createElement('p');
+                element.textContent = entry.contact.studio.city;
+                studio[0].appendChild(element);
+                element = document.createElement('p');
+                element.textContent = entry.contact.studio.country;
+                studio[0].appendChild(element);
+
+
             }
         }
 
