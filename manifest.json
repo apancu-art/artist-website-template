@@ -72,6 +72,375 @@
 								"medium": "Patina on steel",
 								"dimensions": "8x8"
 							}
+						},
+						{
+							"filename": "aliens.jpg",
+							"info": {
+								"title": "Aliens",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "4x6"
+							}
+						},
+						{
+							"filename": "battle.jpg",
+							"info": {
+								"title": "Battle",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "bibi full.jpg",
+							"info": {
+								"title": "Bibi full",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "4x6"
+							}
+						},
+						{
+							"filename": "big squid.jpg",
+							"info": {
+								"title": "Big squid",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "bones.jpg",
+							"info": {
+								"title": "Bones",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "bridge.jpg",
+							"info": {
+								"title": "Bridge",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x12"
+							}
+						},
+						{
+							"filename": "bubbles.jpg",
+							"info": {
+								"title": "Bubbles",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x6"
+							}
+						},
+						{
+							"filename": "bull full.jpg",
+							"info": {
+								"title": "Bull full",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "bull top.jpg",
+							"info": {
+								"title": "Bull top",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "bull.jpg",
+							"info": {
+								"title": "Bull",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "by the campfire.jpg",
+							"info": {
+								"title": "By the campfire",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "clearing dark.jpg",
+							"info": {
+								"title": "Clearing dark",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x12"
+							}
+						},
+						{
+							"filename": "clearing small.jpg",
+							"info": {
+								"title": "Clearing small",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "cubic detail.jpg",
+							"info": {
+								"title": "Cubic detail",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x6"
+							}
+						},
+						{
+							"filename": "cubic.jpg",
+							"info": {
+								"title": "Cubic",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x8"
+							}
+						},
+						{
+							"filename": "demoiselles.jpg",
+							"info": {
+								"title": "Demoiselles",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "father and son.jpg",
+							"info": {
+								"title": "Father and son",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "fireball.jpg",
+							"info": {
+								"title": "Fireball",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x6"
+							}
+						},
+						{
+							"filename": "galaxy in the gallery.jpg",
+							"info": {
+								"title": "Galaxy in the gallery",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "10x12"
+							}
+						},
+						{
+							"filename": "islands.jpg",
+							"info": {
+								"title": "Islands",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "loyal steed.jpg",
+							"info": {
+								"title": "Loyal steed",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "man with donkey.jpg",
+							"info": {
+								"title": "Man with donkey",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "moonrise.jpg",
+							"info": {
+								"title": "Moonrise",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "on the path brown.jpg",
+							"info": {
+								"title": "On the path brown",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "4x12"
+							}
+						},
+						{
+							"filename": "on the planet.jpg",
+							"info": {
+								"title": "On the planet",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "pan detail.jpg",
+							"info": {
+								"title": "Pan detail",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x6"
+							}
+						},
+						{
+							"filename": "pan side.jpg",
+							"info": {
+								"title": "Pan side",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "peasants.jpg",
+							"info": {
+								"title": "Peasants",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "peter pan.jpg",
+							"info": {
+								"title": "Peter pan",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "planet horizon.jpg",
+							"info": {
+								"title": "Planet horizon",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "10x6"
+							}
+						},
+						{
+							"filename": "planets.jpg",
+							"info": {
+								"title": "Planets",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "postcard.jpg",
+							"info": {
+								"title": "Postcard",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x4"
+							}
+						},
+						{
+							"filename": "puddles.jpg",
+							"info": {
+								"title": "Puddles",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "purple bridge.jpg",
+							"info": {
+								"title": "Purple bridge",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x12"
+							}
+						},
+						{
+							"filename": "reeds.jpg",
+							"info": {
+								"title": "Reeds",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x8"
+							}
+						},
+						{
+							"filename": "simmers too.jpg",
+							"info": {
+								"title": "Simmers too",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "squid detail.jpg",
+							"info": {
+								"title": "Squid detail",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "6x6"
+							}
+						},
+						{
+							"filename": "stars.jpg",
+							"info": {
+								"title": "Stars",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x8"
+							}
+						},
+						{
+							"filename": "swimmers.jpg",
+							"info": {
+								"title": "Swimmers",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
+						},
+						{
+							"filename": "the planets have eyes.jpg",
+							"info": {
+								"title": "The planets have eyes",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "10x8"
+							}
+						},
+						{
+							"filename": "uncaged.jpg",
+							"info": {
+								"title": "Uncaged",
+								"year": 2024,
+								"medium": "Patina on steel",
+								"dimensions": "8x10"
+							}
 						}
 					]
 				}
