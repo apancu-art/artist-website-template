@@ -148,7 +148,7 @@ async function loadArtworks() {
                 for (let i = 0; i < sheet.cssRules.length; i++) {
                     const rule = sheet.cssRules[i];
                     if (rule instanceof CSSStyleRule && rule.selectorText === '.bg-image') {
-                        rule.style.setProperty('background-image', `url('../images/${entry.site.background}')`);
+                        rule.style.setProperty('background-image', `url('../images/${entry.site.image}')`);
                         break;
                     }
                 }
@@ -216,7 +216,9 @@ async function loadArtworks() {
                 element.textContent = entry.contact.studio.country;
                 studio[0].appendChild(element);
 
-
+                const image = document.getElementsByClassName('contact-image');
+                image[0].src = `/images/${entry.contact.image.src}`;
+                image[0].alt = entry.contact.image.alt;
             }
         }
 

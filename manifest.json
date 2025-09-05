@@ -1,7 +1,7 @@
 [
 	{
 		"site": {
-			"background" :  "faro.jpg"
+			"image": "faro.jpg"
 		}
 	},
 	{
@@ -110,6 +110,10 @@
 				"street": "23 Mulvagh Ave",
 				"city": "Ottawa, K2E 6M8",
 				"country": "Canada"
+			},
+			"image": {
+				"src": "stairs.jpg",
+				"alt": "Stairs"
 			}
 		}
 	}
