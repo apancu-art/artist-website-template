@@ -1,5 +1,3 @@
-
-
 // Touch swipe navigation for modal
 let touchStartX = 0;
 let touchEndX = 0;
@@ -273,17 +271,21 @@ function createArtworkElement(filename, artworkInfo, container) {
     const artworkFrame = document.createElement('div');
     artworkFrame.className = 'artwork-frame';
 
+    // Use thumbnail for grid
     const artworkImage = document.createElement('img');
-    artworkImage.src = `/images/works/${filename}`;
+    artworkImage.src = `/images/works/thumbs/${filename}`;
     artworkImage.alt = baseName;
     artworkImage.className = 'artwork-image';
+    artworkImage.loading = 'lazy'; // Enable lazy loading
+
+    // Store full-size image path for modal use
+    artworkImage.dataset.fullsize = `/images/works/${filename}`;
 
     artworkFrame.appendChild(artworkImage);
 
     const infoDiv = document.createElement('div');
     infoDiv.className = 'artwork-info';
     infoDiv.textContent = `${artworkInfo.title}, ${artworkInfo.year}. ${artworkInfo.medium} - ${artworkInfo.dimensions}`;
-
 
     artworkContainer.appendChild(artworkFrame);
     artworkOuterContainer.appendChild(artworkContainer);
@@ -307,7 +309,8 @@ function updateModalContent(element) {
 
     modalContainer[0].innerHTML = '';
 
-    modalImage.src = artworkImage.src;
+    // Use full-size image for modal
+    modalImage.src = artworkImage.dataset.fullsize || artworkImage.src;
     modalImage.alt = artworkImage.alt;
     modalImage.className = 'modal-artwork-image';
 
