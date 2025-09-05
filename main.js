@@ -157,6 +157,9 @@ async function loadArtworks() {
                     }
                 }
             } else if (entry.cv) {
+                const artist = document.getElementsByClassName('artist-name');
+                artist[0].textContent = `${entry.cv.name} ${entry.cv.surname}`;
+
                 if (entry.cv.bio) {
                     const bio = document.getElementsByClassName('bio');
                     for (const part of entry.cv.bio) {
