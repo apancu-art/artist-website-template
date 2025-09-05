@@ -139,10 +139,20 @@ async function loadArtworks() {
     });
 
     try {
-        const response = await fetch('/images/works/manifest.json');
+        const response = await fetch('manifest.json');
         const entries = await response.json();
 
         for (const entry of entries) {
+            if (entry.site) {
+                const sheet = document.styleSheets[0];
+                for (let i = 0; i < sheet.cssRules.length; i++) {
+                    const rule = sheet.cssRules[i];
+                    if (rule instanceof CSSStyleRule && rule.selectorText === '.bg-image') {
+                        rule.style.setProperty('background-image', `url('../images/${entry.site.background}')`);
+                        break;
+                    }
+                }
+            }
             if (entry.works) {
                 const categories = document.getElementsByClassName('categories');
                 for (const category of entry.works.categories) {
