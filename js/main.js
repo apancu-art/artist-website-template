@@ -1,3 +1,9 @@
+
+
+// Touch swipe navigation for modal
+let touchStartX = 0;
+let touchEndX = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let homeLink = document.querySelector('.artist-name');
@@ -76,6 +82,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 navbarRight.style.marginRight -= (lastCol.offsetLeft  - navbarRight.offsetLeft) + 'px';
             }
         }
+    });
+
+    // Keyboard navigation for modal
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'ArrowLeft') {
+            const prevBtn = document.querySelector('.prev-btn');
+            if (prevBtn) prevBtn.click();
+        } else if (event.key === 'ArrowRight') {
+            const nextBtn = document.querySelector('.next-btn');
+            if (nextBtn) nextBtn.click();
+        }
+    });
+
+    document.addEventListener('touchstart', function (event) {
+        touchStartX = event.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', function (event) {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
     });
 
     loadArtworks();
@@ -295,38 +321,16 @@ function updateModalContent(element) {
     // Display the modal
     modalBackdrop[0].style.display = 'flex';
 }
-    // Keyboard navigation for modal
-    document.addEventListener('keyup', function(event) {
-        if (event.key === 'ArrowLeft') {
-            const prevBtn = document.querySelector('.prev-btn');
-            if (prevBtn) prevBtn.click();
-        } else if (event.key === 'ArrowRight') {
-            const nextBtn = document.querySelector('.next-btn');
-            if (nextBtn) nextBtn.click();
-        }
-    });
-    // Touch swipe navigation for modal
-    let touchStartX = 0;
-    let touchEndX = 0;
     
-    document.addEventListener('touchstart', function(event) {
-        touchStartX = event.changedTouches[0].screenX;
-    });
-    
-    document.addEventListener('touchend', function(event) {
-        touchEndX = event.changedTouches[0].screenX;
-        handleSwipe();
-    });
-    
-    function handleSwipe() {
-        if (touchEndX < touchStartX - 50) {
-            // Swipe left - next
-            const nextBtn = document.querySelector('.next-btn');
-            if (nextBtn) nextBtn.click();
-        }
-        if (touchEndX > touchStartX + 50) {
-            // Swipe right - previous
-            const prevBtn = document.querySelector('.prev-btn');
-            if (prevBtn) prevBtn.click();
-        }
+function handleSwipe() {
+    if (touchEndX < touchStartX - 50) {
+        // Swipe left - next
+        const nextBtn = document.querySelector('.next-btn');
+        if (nextBtn) nextBtn.click();
     }
+    if (touchEndX > touchStartX + 50) {
+        // Swipe right - previous
+        const prevBtn = document.querySelector('.prev-btn');
+        if (prevBtn) prevBtn.click();
+    }
+}
