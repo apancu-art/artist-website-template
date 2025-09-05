@@ -144,8 +144,17 @@ async function loadArtworks() {
 
         for (const entry of entries) {
             if (entry.works) {
-                for (const work of entry.works) {
-                    createArtworkElement(work.filename, work.info, artworkGrid[0]);
+                const categories = document.getElementsByClassName('categories');
+                for (const category of entry.works.categories) {
+                    const element = document.createElement('p');
+                    element.className = 'py-1';
+                    element.textContent = category.name;
+                    categories[0].appendChild(element);
+                    if (category.files) {
+                        for (const work of category.files) {
+                            createArtworkElement(work.filename, work.info, artworkGrid[0]);                            
+                        }
+                    }
                 }
             } else if (entry.cv) {
                 if (entry.cv.bio) {

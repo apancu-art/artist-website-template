@@ -1,61 +1,69 @@
 [
 	{
-		"works": [
+		"works":
 			{
-				"filename": "bibi.jpg",
-				"info": {
-					"title": "Bibi",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "4x6"
-				}
-			},
-			{
-				"filename": "cosmic path.jpg",
-				"info": {
-					"title": "Cosmic Path",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "4x12"
-				}
-			},
-			{
-				"filename": "after the rain.jpg",
-				"info": {
-					"title": "After the Rain",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "4x12"
-				}
-			},
-			{
-				"filename": "the study.jpg",
-				"info": {
-					"title": "The Study",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "4x12"
-				}
-			},
-			{
-				"filename": "on the path.jpg",
-				"info": {
-					"title": "On the Path",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "4x12"
-				}
-			},
-			{
-				"filename": "clearing.jpg",
-				"info": {
-					"title": "Clearing",
-					"year": 2024,
-					"medium": "Patina on steel",
-					"dimensions": "8x12"
-				}
+				"categories": [
+					{
+						"name": "Entropy and Order",
+						"files": [
+							{
+								"filename": "bibi.jpg",
+								"info": {
+									"title": "Bibi",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "4x6"
+								}
+							},
+							{
+								"filename": "cosmic path.jpg",
+								"info": {
+									"title": "Cosmic Path",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "4x12"
+								}
+							},
+							{
+								"filename": "after the rain.jpg",
+								"info": {
+									"title": "After the Rain",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "4x12"
+								}
+							},
+							{
+								"filename": "the study.jpg",
+								"info": {
+									"title": "The Study",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "4x12"
+								}
+							},
+							{
+								"filename": "on the path.jpg",
+								"info": {
+									"title": "On the Path",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "4x12"
+								}
+							},
+							{
+								"filename": "clearing.jpg",
+								"info": {
+									"title": "Clearing",
+									"year": 2024,
+									"medium": "Patina on steel",
+									"dimensions": "8x12"
+								}
+							}
+						]
+					}
+				]
 			}
-		]
 	},
 	{
 		"cv": {
