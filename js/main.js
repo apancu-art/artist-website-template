@@ -395,10 +395,22 @@ function updateModalContent(element) {
 
     modalContainer[0].appendChild(modalImage);
 
-    prevBtn[0].setAttribute("index", Math.max(0, index - 1));
-    nextBtn[0].setAttribute("index", Math.min(artworkGrid[0].children.length - 1, index + 1));
-    prevBtn[0].style.display = index === 0 ? 'none' : 'block';
-    nextBtn[0].style.display = index === artworkGrid[0].children.length - 1 ? 'none' : 'block';
+    let count = artworkGrid[0].children.length - 1;
+    let prev = index - 1;
+    let next = index + 1;
+
+    if (prev < 0) {
+        prev = count;
+    }
+
+    if (next > count) {
+        next = 0;
+    }
+
+    prevBtn[0].setAttribute("index", prev);
+    nextBtn[0].setAttribute("index", next);
+    prevBtn[0].style.display = 'block';
+    nextBtn[0].style.display = 'block';
 
     // Display the modal
     modalBackdrop[0].style.display = 'flex';
