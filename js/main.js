@@ -138,13 +138,13 @@ async function loadArtworks() {
     const prevSvgNS = "http://www.w3.org/2000/svg";
     const prevSvg = document.createElementNS(prevSvgNS, "svg");
     prevSvg.setAttribute("viewBox", "0 0 9 16");
-    prevSvg.setAttribute("width", "1em");
-    prevSvg.setAttribute("height", "1.78em"); // 16/9 ≈ 1.78 for aspect ratio
+    prevSvg.setAttribute("width", "1.5em");
+    prevSvg.setAttribute("height", "2.67em"); // 16/9 ≈ 1.78 for aspect ratio
 
     const prevPolyline = document.createElementNS(prevSvgNS, "polyline");
     prevPolyline.setAttribute("fill", "none");
     prevPolyline.setAttribute("stroke", "currentColor");
-    prevPolyline.setAttribute("stroke-width", "2");
+    prevPolyline.setAttribute("stroke-width", "1");
     prevPolyline.setAttribute("stroke-miterlimit", "10");
     prevPolyline.setAttribute("points", "7.3,14.7 2.5,8 7.3,1.2");
 
@@ -158,13 +158,13 @@ async function loadArtworks() {
     const nextSvgNS = "http://www.w3.org/2000/svg";
     const nextSvg = document.createElementNS(nextSvgNS, "svg");
     nextSvg.setAttribute("viewBox", "0 0 9 16");
-    nextSvg.setAttribute("width", "1em");
-    nextSvg.setAttribute("height", "1.78em"); // 16/9 ≈ 1.78 for aspect ratio
+    nextSvg.setAttribute("width", "1.5em");
+    nextSvg.setAttribute("height", "2.67em"); // 16/9 ≈ 1.78 for aspect ratio
 
     const nextPolyline = document.createElementNS(nextSvgNS, "polyline");
     nextPolyline.setAttribute("fill", "none");
     nextPolyline.setAttribute("stroke", "currentColor");
-    nextPolyline.setAttribute("stroke-width", "2");
+    nextPolyline.setAttribute("stroke-width", "1");
     nextPolyline.setAttribute("stroke-miterlimit", "10");
     nextPolyline.setAttribute("points", "1.6,1.2 6.5,7.9 1.6,14.7 ");
 
