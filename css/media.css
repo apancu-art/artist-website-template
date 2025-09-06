@@ -7,6 +7,10 @@
     .burger-menu {
         display: flex;
     }
+
+    .nav-btn {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 840px) {

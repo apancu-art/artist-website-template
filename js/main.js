@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSection(hash) {
         if (hash) {
             document.body.classList.remove('bg-image');
+            mobileMenu.classList.remove('active');
+        } else {
+            mobileMenu.classList.add('active');
         }
         navLinks.forEach(link => {
             link.style.fontWeight = hash ? '' : link.classList.contains('artist-name') ? 500 : 400;
@@ -79,6 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
             if (navbarRight && lastCol) {
                 navbarRight.style.marginRight -= (lastCol.offsetLeft  - navbarRight.offsetLeft) + 'px';
             }
+        }
+
+        if (window.location.hash) {
+            mobileMenu.classList.remove('active');
         }
     });
 
