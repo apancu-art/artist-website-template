@@ -106,7 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener('touchend', function (event) {
         touchEndX = event.changedTouches[0].screenX;
-        handleSwipe();
+        if (window.location.hash == '#works') {
+            handleSwipe();
+        }
     });
 
     loadArtworks();
