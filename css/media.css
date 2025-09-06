@@ -23,10 +23,6 @@
         .nav-btn svg {
             display: none;
         }
-
-    .modal-artwork-container {
-        width: min(80vw, 1024px, calc(100vw - 10vw));
-    }
 }
 
 @media (max-width: 840px) {

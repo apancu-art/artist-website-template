@@ -297,8 +297,38 @@ async function loadArtworks() {
 
         document.querySelectorAll('.artwork-container').forEach(function (element) {
 
-            element.addEventListener('click', () => {
-                updateModalContent(element);
+            let touchStartX = 0, touchStartY = 0, touchMoved = false;
+
+            element.addEventListener('touchstart', function (e) {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].clientX;
+                    touchStartY = e.touches[0].clientY;
+                    touchMoved = false;
+                }
+            });
+
+            element.addEventListener('touchmove', function (e) {
+                if (e.touches.length === 1) {
+                    const dx = Math.abs(e.touches[0].clientX - touchStartX);
+                    const dy = Math.abs(e.touches[0].clientY - touchStartY);
+                    if (dx > 10 || dy > 10) {
+                        touchMoved = true;
+                    }
+                }
+            });
+
+            element.addEventListener('touchend', function (e) {
+                if (!touchMoved) {
+                    updateModalContent(element);
+                }
+            });
+
+            // For mouse users, keep the click event
+            element.addEventListener('click', function (e) {
+                // Only trigger if not a touch event
+                if (!('ontouchstart' in window)) {
+                    updateModalContent(element);
+                }
             });
         });
 
