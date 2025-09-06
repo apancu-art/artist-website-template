@@ -92,9 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Keyboard navigation for modal
     document.addEventListener('keyup', function (event) {
         if (event.key === 'ArrowLeft') {
+            event.preventDefault();
             const prevBtn = document.querySelector('.prev-btn');
             if (prevBtn) prevBtn.click();
         } else if (event.key === 'ArrowRight') {
+            event.preventDefault();
             const nextBtn = document.querySelector('.next-btn');
             if (nextBtn) nextBtn.click();
         }
@@ -107,11 +109,35 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('touchend', function (event) {
         touchEndX = event.changedTouches[0].screenX;
         if (window.location.hash == '#works') {
-            handleSwipe();
+            handleSwipe(event);
         }
     });
 
     loadArtworks();
+
+    // Double tap zoom for touchscreens
+    let lastTap = 0;
+    let isZoomed = false;
+    
+    document.addEventListener('touchend', function(e) {
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTap;
+        
+        if (tapLength < 500 && tapLength > 0) {
+            e.preventDefault();
+            
+            if (isZoomed) {
+                document.body.style.transform = 'scale(1)';
+                document.body.style.transformOrigin = 'center center';
+                isZoomed = false;
+            } else {
+                document.body.style.transform = 'scale(1.5)';
+                document.body.style.transformOrigin = 'center center';
+                isZoomed = true;
+            }
+        }
+        lastTap = currentTime;
+    });
 
 });
 
@@ -205,7 +231,7 @@ async function loadArtworks() {
         const grid = grids[gridIndex];
         if (grid && grid.children[index]) {
             const element = grid.children[index].getElementsByClassName('artwork-container')[0];
-            updateModalContent(element);
+            updateModalContent(element, event);
         }
     });
 
@@ -217,7 +243,7 @@ async function loadArtworks() {
         const grid = grids[gridIndex];
         if (grid && grid.children[index]) {
             const element = grid.children[index].getElementsByClassName('artwork-container')[0];
-            updateModalContent(element);
+            updateModalContent(element, event);
         }
     });
 
@@ -362,7 +388,7 @@ async function loadArtworks() {
 
             element.addEventListener('touchend', function (e) {
                 if (!touchMoved) {
-                    updateModalContent(element);
+                    updateModalContent(element, e);
                 }
             });
 
@@ -370,7 +396,7 @@ async function loadArtworks() {
             element.addEventListener('click', function (e) {
                 // Only trigger if not a touch event
                 if (!('ontouchstart' in window)) {
-                    updateModalContent(element);
+                    updateModalContent(element, e);
                 }
             });
         });
@@ -416,7 +442,9 @@ function createArtworkElement(filename, artworkInfo, container) {
     container.appendChild(artworkOuterContainer);
 }
 
-function updateModalContent(element) {
+function updateModalContent(element, event) {
+
+    event.preventDefault();
 
     const modalBackdrop = document.getElementsByClassName('modal-backdrop');
     const modalContainer = document.getElementsByClassName('modal-artwork-container');
@@ -464,14 +492,16 @@ function updateModalContent(element) {
     burgerMenu.style.display = 'none';
 }
     
-function handleSwipe() {
+function handleSwipe(event) {
     if (touchEndX < touchStartX - 50) {
         // Swipe left - next
+        event.preventDefault();
         const nextBtn = document.querySelector('.next-btn');
         if (nextBtn) nextBtn.click();
     }
     if (touchEndX > touchStartX + 50) {
         // Swipe right - previous
+        event.preventDefault();
         const prevBtn = document.querySelector('.prev-btn');
         if (prevBtn) prevBtn.click();
     }
