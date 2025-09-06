@@ -46,23 +46,20 @@ body {
 .nav-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background-color: transparent;
     border: none;
-    font-size: 3rem;
-    font-weight: 100;
     cursor: pointer;
-    color: black;
-    padding: 10px;
+    color: lightgray;
+    padding: 2px;
     display: none;
 }
 
 .prev-btn {
-    left: 50px;
+    left: 3.3vw;
 }
 
 .next-btn {
-    right: 50px;
+    right: 3.3vw;
 }
 
 .burger-menu {

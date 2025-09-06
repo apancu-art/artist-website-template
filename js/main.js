@@ -1,4 +1,4 @@
-// Touch swipe navigation for modal
+﻿// Touch swipe navigation for modal
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -133,11 +133,43 @@ async function loadArtworks() {
     // Create navigation buttons
     const prevBtn = document.createElement('button');
     prevBtn.className = 'nav-btn prev-btn';
-    prevBtn.innerHTML = '&lt;'; // HTML entity for <
+
+    // Create SVG for prev button
+    const prevSvgNS = "http://www.w3.org/2000/svg";
+    const prevSvg = document.createElementNS(prevSvgNS, "svg");
+    prevSvg.setAttribute("viewBox", "0 0 9 16");
+    prevSvg.setAttribute("width", "1em");
+    prevSvg.setAttribute("height", "1.78em"); // 16/9 ≈ 1.78 for aspect ratio
+
+    const prevPolyline = document.createElementNS(prevSvgNS, "polyline");
+    prevPolyline.setAttribute("fill", "none");
+    prevPolyline.setAttribute("stroke", "currentColor");
+    prevPolyline.setAttribute("stroke-width", "2");
+    prevPolyline.setAttribute("stroke-miterlimit", "10");
+    prevPolyline.setAttribute("points", "7.3,14.7 2.5,8 7.3,1.2");
+
+    prevSvg.appendChild(prevPolyline);
+    prevBtn.appendChild(prevSvg);
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'nav-btn next-btn';
-    nextBtn.innerHTML = '&gt;'; // HTML entity for >
+
+    // Create SVG for next button
+    const nextSvgNS = "http://www.w3.org/2000/svg";
+    const nextSvg = document.createElementNS(nextSvgNS, "svg");
+    nextSvg.setAttribute("viewBox", "0 0 9 16");
+    nextSvg.setAttribute("width", "1em");
+    nextSvg.setAttribute("height", "1.78em"); // 16/9 ≈ 1.78 for aspect ratio
+
+    const nextPolyline = document.createElementNS(nextSvgNS, "polyline");
+    nextPolyline.setAttribute("fill", "none");
+    nextPolyline.setAttribute("stroke", "currentColor");
+    nextPolyline.setAttribute("stroke-width", "2");
+    nextPolyline.setAttribute("stroke-miterlimit", "10");
+    nextPolyline.setAttribute("points", "1.6,1.2 6.5,7.9 1.6,14.7 ");
+
+    nextSvg.appendChild(nextPolyline);
+    nextBtn.appendChild(nextSvg);
 
     modalBackdrop.appendChild(prevBtn);
     modalBackdrop.appendChild(nextBtn);
@@ -156,16 +188,16 @@ async function loadArtworks() {
     });
 
     prevBtn.addEventListener('click', (event) => {
-        let index = event.target.getAttribute("index");
+        let index = event.target.parentNode.getAttribute("index");
         const artworkGrid = document.getElementsByClassName('artwork-grid');
-        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');;
+        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
         updateModalContent(element[0]);
     });
 
     nextBtn.addEventListener('click', (event) => {
-        let index = event.target.getAttribute("index");
+        let index = event.target.parentNode.getAttribute("index");
         const artworkGrid = document.getElementsByClassName('artwork-grid');
-        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');;
+        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
         updateModalContent(element[0]);
     });
 
