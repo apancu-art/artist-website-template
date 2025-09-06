@@ -1,4 +1,33 @@
 
+.tab-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: none;
+    background: none;
+}
+
+.tab-btn {
+    min-width: 44px;
+    min-height: 44px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: dimgray;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    border-radius: 0;
+    transition: color 0.2s;
+}
+
+    .tab-btn.active {
+        color: black;
+        font-weight: 500;
+    }
+
 .artwork-grid {
     margin-top: 20px;
     display: grid;

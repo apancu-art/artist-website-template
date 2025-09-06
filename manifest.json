@@ -8,6 +8,101 @@
 		"works": {
 			"categories": [
 				{
+					"name": "The Forest",
+					"files": [
+						{
+							"filename": "watching woods.jpg",
+							"info": {
+								"title": "Watching Woods",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "6.5 x 7.6 in.",
+								"resolution": "1935x2279"
+							}
+						},
+						{
+							"filename": "swimmers.jpg",
+							"info": {
+								"title": "Swimmers",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "12.2 x 8.1 in.",
+								"resolution": "3648x2433"
+							}
+						},
+						{
+							"filename": "embryo.jpg",
+							"info": {
+								"title": "Embryonic Journey",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "9.2 x 9.2 in.",
+								"resolution": "2751x2752"
+							}
+						},
+						{
+							"filename": "demoiselles.jpg",
+							"info": {
+								"title": "Demoiselles",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "15.5 x 5.5 in.",
+								"resolution": "4654x1659"
+							}
+						},
+						{
+							"filename": "reeds.jpg",
+							"info": {
+								"title": "Reeds",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "7.2 x 10.8 in.",
+								"resolution": "2157x3236"
+							}
+						},
+						{
+							"filename": "loyal steed.jpg",
+							"info": {
+								"title": "Loyal steed",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "26.8 x 20.5 in.",
+								"resolution": "8044x6144"
+							}
+						},
+						{
+							"filename": "pan detail.jpg",
+							"info": {
+								"title": "Pan detail",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "23.7 x 20.5 in.",
+								"resolution": "7109x6144"
+							}
+						},
+						{
+							"filename": "pan side.jpg",
+							"info": {
+								"title": "Pan side",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "6.3 x 16.1 in.",
+								"resolution": "1888x4825"
+							}
+						},
+						{
+							"filename": "squid detail.jpg",
+							"info": {
+								"title": "Squid detail",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
+								"dimensions": "14.6 x 13.3 in.",
+								"resolution": "4376x3978"
+							}
+						}
+					]
+				},
+				{
 					"name": "Entropy and Order",
 					"files": [
 						{
@@ -71,16 +166,6 @@
 							}
 						},
 						{
-							"filename": "embryo.jpg",
-							"info": {
-								"title": "Embryonic Journey",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "9.2 x 9.2 in.",
-								"resolution": "2751x2752"
-							}
-						},
-						{
 							"filename": "battle at sea.jpg",
 							"info": {
 								"title": "Battle at Sea",
@@ -121,26 +206,6 @@
 							}
 						},
 						{
-							"filename": "bull top.jpg",
-							"info": {
-								"title": "Bull top",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "20.5 x 13.1 in.",
-								"resolution": "6144x3915"
-							}
-						},
-						{
-							"filename": "watching woods.jpg",
-							"info": {
-								"title": "Watching Woods",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "6.5 x 7.6 in.",
-								"resolution": "1935x2279"
-							}
-						},
-						{
 							"filename": "clearing.jpg",
 							"info": {
 								"title": "The Clearing",
@@ -158,16 +223,6 @@
 								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
 								"dimensions": "6.7 x 20.5 in.",
 								"resolution": "2010x6161"
-							}
-						},
-						{
-							"filename": "demoiselles.jpg",
-							"info": {
-								"title": "Demoiselles",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "15.5 x 5.5 in.",
-								"resolution": "4654x1659"
 							}
 						},
 						{
@@ -211,16 +266,6 @@
 							}
 						},
 						{
-							"filename": "loyal steed.jpg",
-							"info": {
-								"title": "Loyal steed",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "26.8 x 20.5 in.",
-								"resolution": "8044x6144"
-							}
-						},
-						{
 							"filename": "man with donkey.jpg",
 							"info": {
 								"title": "Man with donkey",
@@ -251,26 +296,6 @@
 							}
 						},
 						{
-							"filename": "pan detail.jpg",
-							"info": {
-								"title": "Pan detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "23.7 x 20.5 in.",
-								"resolution": "7109x6144"
-							}
-						},
-						{
-							"filename": "pan side.jpg",
-							"info": {
-								"title": "Pan side",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "6.3 x 16.1 in.",
-								"resolution": "1888x4825"
-							}
-						},
-						{
 							"filename": "postcard.jpg",
 							"info": {
 								"title": "Postcard",
@@ -298,36 +323,6 @@
 								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
 								"dimensions": "3.6 x 12.7 in.",
 								"resolution": "1068x3801"
-							}
-						},
-						{
-							"filename": "reeds.jpg",
-							"info": {
-								"title": "Reeds",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "7.2 x 10.8 in.",
-								"resolution": "2157x3236"
-							}
-						},
-						{
-							"filename": "squid detail.jpg",
-							"info": {
-								"title": "Squid detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "14.6 x 13.3 in.",
-								"resolution": "4376x3978"
-							}
-						},
-						{
-							"filename": "swimmers.jpg",
-							"info": {
-								"title": "Swimmers",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Enhanced paper (edition of 100)",
-								"dimensions": "12.2 x 8.1 in.",
-								"resolution": "3648x2433"
 							}
 						}
 					]

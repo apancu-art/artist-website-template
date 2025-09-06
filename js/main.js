@@ -196,19 +196,27 @@ async function loadArtworks() {
     });
 
     prevBtn.addEventListener('click', (event) => {
-        const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
-        let index = prevBtn[0].getAttribute("index");
-        const artworkGrid = document.getElementsByClassName('artwork-grid');
-        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
-        updateModalContent(element[0]);
+        const btn = event.currentTarget;
+        const gridIndex = parseInt(btn.getAttribute("data-grid"), 10);
+        const index = parseInt(btn.getAttribute("index"), 10);
+        const grids = document.querySelectorAll('.artwork-grid');
+        const grid = grids[gridIndex];
+        if (grid && grid.children[index]) {
+            const element = grid.children[index].getElementsByClassName('artwork-container')[0];
+            updateModalContent(element);
+        }
     });
 
     nextBtn.addEventListener('click', (event) => {
-        const nextBtn = document.getElementsByClassName('nav-btn next-btn');
-        let index = nextBtn[0].getAttribute("index");
-        const artworkGrid = document.getElementsByClassName('artwork-grid');
-        let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
-        updateModalContent(element[0]);
+        const btn = event.currentTarget;
+        const gridIndex = parseInt(btn.getAttribute("data-grid"), 10);
+        const index = parseInt(btn.getAttribute("index"), 10);
+        const grids = document.querySelectorAll('.artwork-grid');
+        const grid = grids[gridIndex];
+        if (grid && grid.children[index]) {
+            const element = grid.children[index].getElementsByClassName('artwork-container')[0];
+            updateModalContent(element);
+        }
     });
 
     try {
@@ -227,18 +235,51 @@ async function loadArtworks() {
                 }
             }
             if (entry.works) {
-                const categories = document.getElementsByClassName('categories');
-                for (const category of entry.works.categories) {
-                    const element = document.createElement('p');
-                    element.className = 'py-1';
-                    element.textContent = category.name;
-                    categories[0].appendChild(element);
+                const categoriesTabs = document.querySelector('.categories-tabs');
+                categoriesTabs.innerHTML = '';
+
+                // Create tab bar
+                const tabBar = document.createElement('div');
+                tabBar.className = 'tab-bar';
+
+                // Create tab panels (artwork grids)
+                const tabPanels = document.createElement('div');
+                tabPanels.className = 'tab-panels';
+
+                entry.works.categories.forEach((category, i) => {
+                    // Tab button
+                    const tabBtn = document.createElement('button');
+                    tabBtn.className = 'tab-btn';
+                    tabBtn.textContent = category.name;
+                    if (i === 0) tabBtn.classList.add('active');
+                    tabBar.appendChild(tabBtn);
+
+                    // Artwork grid for this category
+                    const grid = document.createElement('div');
+                    grid.className = 'artwork-grid';
+                    grid.style.display = i === 0 ? 'grid' : 'none';
+
                     if (category.files) {
                         for (const work of category.files) {
-                            createArtworkElement(work.filename, work.info, artworkGrid[0]);
+                            createArtworkElement(work.filename, work.info, grid);
                         }
                     }
-                }
+                    tabPanels.appendChild(grid);
+
+                    // Tab click event
+                    tabBtn.addEventListener('click', () => {
+                        // Set active tab
+                        tabBar.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                        tabBtn.classList.add('active');
+                        // Show/hide grids
+                        tabPanels.querySelectorAll('.artwork-grid').forEach((g, gi) => {
+                            g.style.display = gi === i ? 'grid' : 'none';
+                        });
+                    });
+                });
+
+                categoriesTabs.appendChild(tabBar);
+                categoriesTabs.appendChild(tabPanels);
             } else if (entry.cv) {
                 const artist = document.getElementsByClassName('artist-name');
                 artist[0].textContent = `${entry.cv.name} ${entry.cv.surname}`;
@@ -295,7 +336,7 @@ async function loadArtworks() {
             }
         }
 
-        document.querySelectorAll('.artwork-container').forEach(function (element) {
+        document.querySelectorAll('.artwork-grid .artwork-container').forEach(function (element) {
 
             let touchStartX = 0, touchStartY = 0, touchMoved = false;
 
@@ -375,42 +416,36 @@ function createArtworkElement(filename, artworkInfo, container) {
 
 function updateModalContent(element) {
 
-    const artworkGrid = document.getElementsByClassName('artwork-grid');
     const modalBackdrop = document.getElementsByClassName('modal-backdrop');
-    const modalContainer = document.getElementsByClassName('modal-artwork-container');
-    const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
-    const nextBtn = document.getElementsByClassName('nav-btn next-btn');
+    //const artworkGrid = document.getElementsByClassName('artwork-grid');
+    //const modalContainer = document.getElementsByClassName('modal-artwork-container');
+    //const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
+    //const nextBtn = document.getElementsByClassName('nav-btn next-btn');
 
     // Update modal content with the clicked artwork's data
-    const index = Array.from(artworkGrid[0].children).indexOf(element.parentElement);
-    const artworkImage = element.querySelector('.artwork-image');
-    const modalImage = document.createElement('img');
+    // Find the parent grid of the clicked artwork
+    const artworkGrid = element.closest('.artwork-grid');
+    const grids = Array.from(document.querySelectorAll('.artwork-grid'));
+    const gridIndex = grids.indexOf(artworkGrid);
 
-    modalContainer[0].innerHTML = '';
+    // Find the index of the artwork in its grid
+    const index = Array.from(artworkGrid.children).indexOf(element.parentElement);
+    const count = artworkGrid.children.length - 1;
 
-    // Use full-size image for modal
-    modalImage.src = artworkImage.dataset.fullsize || artworkImage.src;
-    modalImage.alt = artworkImage.alt;
-    modalImage.className = 'modal-artwork-image';
-
-    modalContainer[0].appendChild(modalImage);
-
-    let count = artworkGrid[0].children.length - 1;
     let prev = index - 1;
     let next = index + 1;
+    if (prev < 0) prev = count;
+    if (next > count) next = 0;
 
-    if (prev < 0) {
-        prev = count;
-    }
-
-    if (next > count) {
-        next = 0;
-    }
-
-    prevBtn[0].setAttribute("index", prev);
-    nextBtn[0].setAttribute("index", next);
-    prevBtn[0].style.display = 'block';
-    nextBtn[0].style.display = 'block';
+    // Set navigation button indices and store the grid index as a data attribute
+    const prevBtnEl = document.getElementsByClassName('nav-btn prev-btn')[0];
+    const nextBtnEl = document.getElementsByClassName('nav-btn next-btn')[0];
+    prevBtnEl.setAttribute("index", prev);
+    nextBtnEl.setAttribute("index", next);
+    prevBtnEl.setAttribute("data-grid", gridIndex);
+    nextBtnEl.setAttribute("data-grid", gridIndex);
+    prevBtnEl.style.display = 'block';
+    nextBtnEl.style.display = 'block';
 
     // Display the modal
     modalBackdrop[0].style.display = 'flex';
