@@ -417,20 +417,29 @@ function createArtworkElement(filename, artworkInfo, container) {
 function updateModalContent(element) {
 
     const modalBackdrop = document.getElementsByClassName('modal-backdrop');
-    //const artworkGrid = document.getElementsByClassName('artwork-grid');
-    //const modalContainer = document.getElementsByClassName('modal-artwork-container');
-    //const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
-    //const nextBtn = document.getElementsByClassName('nav-btn next-btn');
+    const modalContainer = document.getElementsByClassName('modal-artwork-container');
 
-    // Update modal content with the clicked artwork's data
     // Find the parent grid of the clicked artwork
     const artworkGrid = element.closest('.artwork-grid');
     const grids = Array.from(document.querySelectorAll('.artwork-grid'));
     const gridIndex = grids.indexOf(artworkGrid);
-
+        
     // Find the index of the artwork in its grid
     const index = Array.from(artworkGrid.children).indexOf(element.parentElement);
     const count = artworkGrid.children.length - 1;
+
+    // Update modal content with the clicked artwork's data
+    const artworkImage = element.querySelector('.artwork-image');
+    const modalImage = document.createElement('img');
+
+    modalContainer[0].innerHTML = '';
+
+    // Use full-size image for modal
+    modalImage.src = artworkImage.dataset.fullsize || artworkImage.src;
+    modalImage.alt = artworkImage.alt;
+    modalImage.className = 'modal-artwork-image';
+
+    modalContainer[0].appendChild(modalImage);
 
     let prev = index - 1;
     let next = index + 1;
