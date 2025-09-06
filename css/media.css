@@ -9,8 +9,19 @@
     }
 
     .nav-btn {
-        opacity: 0;
+        /* Optionally, set a min-width/min-height for touch targets */
+        background: none;
+        border: none;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+        position: relative;
+        z-index: 1;
     }
+
+        .nav-btn svg {
+            display: none;
+        }
 }
 
 @media (max-width: 840px) {
