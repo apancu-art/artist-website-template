@@ -128,9 +128,9 @@
 							}
 						},
 						{
-							"filename": "clearing small.jpg",
+							"filename": "clearing.jpg",
 							"info": {
-								"title": "Clearing small",
+								"title": "The Clearing",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "6x8"
@@ -218,9 +218,9 @@
 							}
 						},
 						{
-							"filename": "on the planet.jpg",
+							"filename": "asteroid B-612.jpg",
 							"info": {
-								"title": "On the planet",
+								"title": "Asteroid B-612",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "8x10"
@@ -242,42 +242,6 @@
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "6x8"
-							}
-						},
-						{
-							"filename": "peasants.jpg",
-							"info": {
-								"title": "Peasants",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "6x8"
-							}
-						},
-						{
-							"filename": "peter pan.jpg",
-							"info": {
-								"title": "Peter pan",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
-							}
-						},
-						{
-							"filename": "planet horizon.jpg",
-							"info": {
-								"title": "Planet horizon",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "10x6"
-							}
-						},
-						{
-							"filename": "planets.jpg",
-							"info": {
-								"title": "Planets",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
 							}
 						},
 						{
@@ -317,24 +281,6 @@
 							}
 						},
 						{
-							"filename": "swimmers too.jpg",
-							"info": {
-								"title": "Swimmers too",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
-							}
-						},
-						{
-							"filename": "big squid.jpg",
-							"info": {
-								"title": "Big squid",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x10"
-							}
-						},
-						{
 							"filename": "squid detail.jpg",
 							"info": {
 								"title": "Squid detail",
@@ -344,30 +290,12 @@
 							}
 						},
 						{
-							"filename": "stars.jpg",
-							"info": {
-								"title": "Stars",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "8x8"
-							}
-						},
-						{
 							"filename": "swimmers.jpg",
 							"info": {
 								"title": "Swimmers",
 								"year": 2024,
 								"medium": "Patina on steel",
 								"dimensions": "8x10"
-							}
-						},
-						{
-							"filename": "the planets have eyes.jpg",
-							"info": {
-								"title": "The planets have eyes",
-								"year": 2024,
-								"medium": "Patina on steel",
-								"dimensions": "10x8"
 							}
 						}
 					]
