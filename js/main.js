@@ -179,23 +179,33 @@ async function loadArtworks() {
 
     closeButton.addEventListener('click', () => {
         modalBackdrop.style.display = 'none';
+        if (window.innerWidth <= 720) {
+            let burgerMenu = document.querySelector('.burger-menu');
+            burgerMenu.style.display = 'flex';
+        }
     });
 
     window.addEventListener('click', (event) => {
         if (event.target === modalBackdrop) {
             modalBackdrop.style.display = 'none';
+            if (window.innerWidth <= 720) {
+                let burgerMenu = document.querySelector('.burger-menu');
+                burgerMenu.style.display = 'flex';
+            }
         }
     });
 
     prevBtn.addEventListener('click', (event) => {
-        let index = event.target.parentNode.getAttribute("index");
+        const prevBtn = document.getElementsByClassName('nav-btn prev-btn');
+        let index = prevBtn[0].getAttribute("index");
         const artworkGrid = document.getElementsByClassName('artwork-grid');
         let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
         updateModalContent(element[0]);
     });
 
     nextBtn.addEventListener('click', (event) => {
-        let index = event.target.parentNode.getAttribute("index");
+        const nextBtn = document.getElementsByClassName('nav-btn next-btn');
+        let index = nextBtn[0].getAttribute("index");
         const artworkGrid = document.getElementsByClassName('artwork-grid');
         let element = artworkGrid[0].children[index].getElementsByClassName('artwork-container');
         updateModalContent(element[0]);
@@ -362,6 +372,8 @@ function updateModalContent(element) {
 
     // Display the modal
     modalBackdrop[0].style.display = 'flex';
+    let burgerMenu = document.querySelector('.burger-menu');
+    burgerMenu.style.display = 'none';
 }
     
 function handleSwipe() {
