@@ -84,10 +84,9 @@
 
 .modal-artwork-container {
     width: 80vw;
-    max-width: 1024px;
+    max-width: 80vh;
     max-height: 80vh;
     aspect-ratio: 1;
-    height: auto;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
