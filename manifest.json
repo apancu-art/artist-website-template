@@ -8,169 +8,6 @@
 		"works": {
 			"categories": [
 				{
-					"name": "Across the Garden Wall",
-					"images": [
-						{
-							"filename": "watching woods.jpg",
-							"info": {
-								"title": "Watching Woods",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.5 x 7.6 in.",
-								"resolution": "1935x2279",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "swimmers.jpg",
-							"info": {
-								"title": "Swimmers",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "12.2 x 8.1 in.",
-								"resolution": "3648x2433",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "embryo.jpg",
-							"info": {
-								"title": "Embryonic Journey",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "9.2 x 9.2 in.",
-								"resolution": "2751x2752",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "demoiselles.jpg",
-							"info": {
-								"title": "Demoiselles",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "15.5 x 5.5 in.",
-								"resolution": "4654x1659",
-								"analysis": [
-									{
-										"Gemini Flash 2.5": "### A Primal Echo of Cubist Disintegration. This work, an intense and visceral mixed-media piece titled **Demoiselles**, seems to channel the raw, fragmented energy of Picasso's revolutionary masterpiece while pushing it through a contemporary lens of decay and re-formation. The title itself is a bold reclamation, not of the original's form, but of its spirit of disruptive deconstruction.. The artist forgoes the crisp geometry of early Cubism for a more organic, almost geological layering. The surface is a palimpsest of textures, where rusted reds, deep ochres, and muted blues mingle with a sense of both ruin and resilience. We see figures, or echoes of figures, emerging from and dissolving back into the material itself. The forms are less about a precise fracturing of a single perspective and more about the chaotic, simultaneous existence of multiple states—of being, of becoming, and of unraveling.. The piece feels less like a finished painting and more like an archaeological dig, a recovered artifact from a forgotten future. The brushstrokes are thick, almost sculpted, and the application of media suggests a history of creation and erosion. This isn't a passive image; it's a dynamic field of energy where human forms writhe and meld with their surroundings. The work invites us to consider how we perceive form, not just in space, but across time, and to confront the powerful, unsettling beauty in a state of continuous flux and disintegration."
-									}
-								],
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "reeds.jpg",
-							"info": {
-								"title": "Reeds",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "7.2 x 10.8 in.",
-								"resolution": "2157x3236",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "loyal steed.jpg",
-							"info": {
-								"title": "Loyal steed",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "26.8 x 20.5 in.",
-								"resolution": "8044x6144",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "pan detail.jpg",
-							"info": {
-								"title": "Pan detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "23.7 x 20.5 in.",
-								"resolution": "7109x6144",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "pan side.jpg",
-							"info": {
-								"title": "Pan side",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.3 x 16.1 in.",
-								"resolution": "1888x4825",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "squid detail.jpg",
-							"info": {
-								"title": "Squid detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "14.6 x 13.3 in.",
-								"resolution": "4376x3978",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						}
-					]
-				},
-				{
 					"name": "Strange Attractors",
 					"images": [
 						{
@@ -543,6 +380,169 @@
 								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
 								"dimensions": "3.6 x 12.7 in.",
 								"resolution": "1068x3801",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Across the Garden Wall",
+					"images": [
+						{
+							"filename": "watching woods.jpg",
+							"info": {
+								"title": "Watching Woods",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "6.5 x 7.6 in.",
+								"resolution": "1935x2279",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "swimmers.jpg",
+							"info": {
+								"title": "Swimmers",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "12.2 x 8.1 in.",
+								"resolution": "3648x2433",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "embryo.jpg",
+							"info": {
+								"title": "Embryonic Journey",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "9.2 x 9.2 in.",
+								"resolution": "2751x2752",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "demoiselles.jpg",
+							"info": {
+								"title": "Demoiselles",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "15.5 x 5.5 in.",
+								"resolution": "4654x1659",
+								"analysis": [
+									{
+										"Gemini Flash 2.5": "### A Primal Echo of Cubist Disintegration. This work, an intense and visceral mixed-media piece titled **Demoiselles**, seems to channel the raw, fragmented energy of Picasso's revolutionary masterpiece while pushing it through a contemporary lens of decay and re-formation. The title itself is a bold reclamation, not of the original's form, but of its spirit of disruptive deconstruction.. The artist forgoes the crisp geometry of early Cubism for a more organic, almost geological layering. The surface is a palimpsest of textures, where rusted reds, deep ochres, and muted blues mingle with a sense of both ruin and resilience. We see figures, or echoes of figures, emerging from and dissolving back into the material itself. The forms are less about a precise fracturing of a single perspective and more about the chaotic, simultaneous existence of multiple states—of being, of becoming, and of unraveling.. The piece feels less like a finished painting and more like an archaeological dig, a recovered artifact from a forgotten future. The brushstrokes are thick, almost sculpted, and the application of media suggests a history of creation and erosion. This isn't a passive image; it's a dynamic field of energy where human forms writhe and meld with their surroundings. The work invites us to consider how we perceive form, not just in space, but across time, and to confront the powerful, unsettling beauty in a state of continuous flux and disintegration."
+									}
+								],
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "reeds.jpg",
+							"info": {
+								"title": "Reeds",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "7.2 x 10.8 in.",
+								"resolution": "2157x3236",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "loyal steed.jpg",
+							"info": {
+								"title": "Loyal steed",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "26.8 x 20.5 in.",
+								"resolution": "8044x6144",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "pan detail.jpg",
+							"info": {
+								"title": "Pan detail",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "23.7 x 20.5 in.",
+								"resolution": "7109x6144",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "pan side.jpg",
+							"info": {
+								"title": "Pan side",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "6.3 x 16.1 in.",
+								"resolution": "1888x4825",
+								"series": [
+									{
+										"8x10": {
+											"available": 100
+										}
+									}
+								]
+							}
+						},
+						{
+							"filename": "squid detail.jpg",
+							"info": {
+								"title": "Squid detail",
+								"year": 2024,
+								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
+								"dimensions": "14.6 x 13.3 in.",
+								"resolution": "4376x3978",
 								"series": [
 									{
 										"8x10": {
