@@ -69,4 +69,12 @@
     p {
         color: #ccc;
     }
+
+    .tab-btn {
+        color: white;
+    }
+
+        .tab-btn.active {
+            color: white;
+        }
 }

@@ -6,27 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    let homeLink = document.querySelector('.artist-name');
     let navLinks = document.querySelectorAll('.navbar a');
     let sections = document.querySelectorAll('main > .sections > section');
     let burgerMenu = document.querySelector('.burger-menu');
     let mobileMenu = document.querySelector('.mobile-menu');
     let menuLinks = mobileMenu.querySelectorAll('a');
 
-    // TODO: fold this into the navLinks click listener
-    homeLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.add('bg-image');
-        window.location.hash = '';
-    });
-
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
+
             e.preventDefault();
-            for (let link of this.parentNode.children) {
-                link.style.fontWeight = link == this ? 400 : '';
-            }
+
             let targetHash = this.getAttribute('href');
+
+            if (targetHash == "#") {
+                document.body.classList.add('bg-image');
+            } else {
+                for (let link of this.parentNode.children) {
+                    link.style.fontWeight = link == this ? 400 : '';
+                }
+            }
             window.location.hash = targetHash;
         });
     });
@@ -79,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     document.addEventListener('touchend', function (event) {
 
+        // TODO: this preventS the window click event from firing
         //event.preventDefault();
 
         const currentTime = new Date().getTime();
@@ -88,10 +88,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (window.location.hash == '#works') {
 
-            if (touchEndX < touchStartX - 60) {
+            if (touchEndX < touchStartX - 20) {
                 const nextBtn = document.querySelector('.next-btn');
                 if (nextBtn) nextBtn.click();
-            } else if (touchEndX > touchStartX + 60) {
+            } else if (touchEndX > touchStartX + 20) {
                 const prevBtn = document.querySelector('.prev-btn');
                 if (prevBtn) prevBtn.click();
             }
@@ -281,8 +281,8 @@ async function loadArtworks() {
                     grid.className = 'artwork-grid';
                     grid.style.display = i === 0 ? 'grid' : 'none';
 
-                    if (category.files) {
-                        for (const work of category.files) {
+                    if (category.images) {
+                        for (const work of category.images) {
                             createArtworkElement(work.filename, work.info, grid);
                         }
                     }
