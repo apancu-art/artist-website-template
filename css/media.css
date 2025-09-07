@@ -38,6 +38,13 @@
     }
 }
 
+@media (min-width: 1200px) {
+
+    body {
+        margin-left: 3vw;
+    }
+}
+
 @media (min-width: 1800px) {
 
     .navbar-left .artist-name {
