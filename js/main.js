@@ -311,7 +311,7 @@ async function loadArtworks() {
                     for (const part of entry.cv.bio) {
                         const element = document.createElement('p');
                         element.className = 'pb-1';
-                        element.textContent = part;
+                        element.innerHTML = part;
                         bio.appendChild(element);
                     }
                     const location = document.querySelector('.location');
