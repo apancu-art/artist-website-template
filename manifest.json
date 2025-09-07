@@ -475,13 +475,18 @@
 							}
 						},
 						{
-							"filename": "asteroid B-612.jpg",
+							"filename": "planet horizon.jpg",
 							"info": {
-								"title": "Asteroid B-612",
+								"title": "Planet Horizon",
 								"year": 2024,
 								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "Note: No matching image found",
-								"resolution": "N/A",
+								"dimensions": "20.1 x 26.3 in.",
+								"resolution": "6016x8049",
+								"analysis": [
+									{
+										"Gemini Flash 2.5": "### The Unseen Topography of a Cosmic Home This work, an evocative mixed-media piece, draws the viewer into a compelling dialogue between abstract expressionism and deeply personal narrative. Titled **Asteroid B-612**, it immediately grounds itself in the whimsical yet poignant universe of *The Little Prince*, transforming a literary concept into a tactile, layered visual experience. The artist, rather than depicting the asteroid literally, seems to be channeling its essence—a small, isolated world teeming with intricate, unseen connections.The composition is a rich tapestry of textures and forms, a kind of psychological topography. The surface is a dynamic interplay of liquid and solid, with organic shapes and geometric lines coexisting in a state of controlled chaos. The dominant palette of muted golds, deep blues, and earthy browns suggests a sense of both celestial wonder and grounded decay. The gold-leaf-like forms seem to trace unseen pathways, perhaps representing the baobabs or the prince's own journey, while the darker, more visceral textures evoke the raw, elemental nature of his small planet. This piece refuses to be a mere illustration. Instead, it invites a deeper meditation on themes of solitude, memory, and the intricate relationships that define a personal world. The work’s power lies in its ability to be simultaneously intimate and vast, a microcosm of a much larger cosmic loneliness. It's a challenging, rewarding piece that prompts us to consider what our own personal B-612s look like—the places, memories, and connections that make up the unique landscape of our inner lives."
+									}
+								],
 								"series": [
 									{
 										"8x10": {
