@@ -1,16 +1,13 @@
 
-@media (max-width: 512px) {
+@media (max-width: 840px) {
 
-    body {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+    .column-grid {
+        flex-direction: column;
+        gap: 0;
     }
-}
-@media (max-width: 540px) {
 
-    body {
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .grid-column {
+        max-width: none;
     }
 }
 
@@ -25,29 +22,47 @@
     }
 
     .tab-bar {
-        gap: 0.5rem;
-        margin-bottom: 1rem;
+        gap: 1.4rem;
     }
 
     .tab-btn {
         font-size: 1rem;
-        padding: 0.4rem 0.7rem;
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 540px) {
 
-    .column-grid {
-        flex-direction: column;
-        gap: 0;
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
-    .grid-column {
-        max-width: none;
+    .tab-btn {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 512px) {
+
+    body {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .tab-bar {
+        gap: 1.2rem;
+    }
+
+    .tab-btn {
+        font-size: .8rem;
     }
 }
 
 @media (min-width: 720px) {
+
     .mobile-menu {
         display: none !important;
     }
@@ -74,6 +89,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
     body {
         background: #111;
         color: #fff;
