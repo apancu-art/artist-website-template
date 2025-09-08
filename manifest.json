@@ -1,7 +1,7 @@
 [
 	{
 		"site": {
-			"image": "faro.jpg"
+			"image": "stairs.jpg"
 		}
 	},
 	{
@@ -270,14 +270,12 @@
 		"contact": {
 			"links": [
 				{
-					"type": "insta",
-					"label": "account name",
-					"url": "url"
+					"type": "instagram",
+					"label": "account name"
 				},
 				{
 					"type": "email",
-					"label": "email address",
-					"url": "mailto:info@andreipancu.com"
+					"label": "email address"
 				}
 			],
 			"studio": {
