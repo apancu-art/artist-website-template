@@ -56,14 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener('resize', function () {
-        if (window.location.hash == '#cv') {
-            let navbarRight = document.querySelector('.navbar-right');
-            let lastCol = document.querySelector('.column-grid > div:last-child');
-            if (navbarRight && lastCol) {
-                navbarRight.style.marginRight -= (lastCol.offsetLeft  - navbarRight.offsetLeft) + 'px';
-            }
-        }
-
         if (window.location.hash) {
             mobileMenu.classList.remove('active');
         }
@@ -435,7 +427,7 @@ function createArtworkElement(filename, artworkInfo, container) {
 
     const infoDiv = document.createElement('div');
     infoDiv.className = 'artwork-info';
-    infoDiv.textContent = `${artworkInfo.title}, ${artworkInfo.year}. ${artworkInfo.medium} - ${artworkInfo.dimensions}`;
+    infoDiv.innerHTML = `<span>${artworkInfo.title}, ${artworkInfo.year}. ${artworkInfo.medium} - ${artworkInfo.dimensions}</span>`;
 
     artworkContainer.appendChild(artworkFrame);
     artworkOuterContainer.appendChild(artworkContainer);

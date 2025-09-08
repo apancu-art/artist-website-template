@@ -96,23 +96,6 @@
 							}
 						},
 						{
-							"filename": "on the path brown.jpg",
-							"info": {
-								"title": "On the path brown",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "8.0 x 26.7 in.",
-								"resolution": "2395x7998",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
 							"filename": "battle at sea.jpg",
 							"info": {
 								"title": "Battle at Sea",
@@ -137,23 +120,6 @@
 								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
 								"dimensions": "9.9 x 15.4 in.",
 								"resolution": "2972x4628",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "bridge.jpg",
-							"info": {
-								"title": "Bridge",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "3.6 x 12.7 in.",
-								"resolution": "1068x3801",
 								"series": [
 									{
 										"8x10": {
@@ -215,23 +181,6 @@
 							}
 						},
 						{
-							"filename": "father and son.jpg",
-							"info": {
-								"title": "Father and son",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "17.8 x 27.2 in.",
-								"resolution": "5348x8160",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
 							"filename": "fireball.jpg",
 							"info": {
 								"title": "Fireball",
@@ -273,40 +222,6 @@
 								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
 								"dimensions": "9.1 x 9.1 in.",
 								"resolution": "2731x2734",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "man with donkey.jpg",
-							"info": {
-								"title": "Man with donkey",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "27.2 x 17.8 in.",
-								"resolution": "8160x5348",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "moonrise.jpg",
-							"info": {
-								"title": "Moonrise",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "8.1 x 26.9 in.",
-								"resolution": "2432x8085",
 								"series": [
 									{
 										"8x10": {
@@ -363,23 +278,6 @@
 								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
 								"dimensions": "7.6 x 20.8 in.",
 								"resolution": "2292x6254",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
-							}
-						},
-						{
-							"filename": "purple bridge.jpg",
-							"info": {
-								"title": "Purple bridge",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "3.6 x 12.7 in.",
-								"resolution": "1068x3801",
 								"series": [
 									{
 										"8x10": {
