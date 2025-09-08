@@ -8,472 +8,257 @@
 		"works": {
 			"categories": [
 				{
-					"name": "Strange Attractors",
+					"name": "Category 1",
 					"images": [
 						{
-							"filename": "bibi.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Bibi Has a Look",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "5.5 x 10.4 in.",
-								"resolution": "1642x3120",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "5.5 x 10.4 in."
 							}
 						},
 						{
-							"filename": "cosmic path.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Cosmic Path",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "3.7 x 12.8 in.",
-								"resolution": "1121x3830",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.7 x 12.8 in."
 							}
 						},
 						{
-							"filename": "after the rain.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "After the Rain",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "3.5 x 10.8 in.",
-								"resolution": "1057x3251",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.5 x 10.8 in."
 							}
 						},
 						{
-							"filename": "the study.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "The Study",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.7 x 26.5 in.",
-								"resolution": "2002x7952",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.7 x 26.5 in."
 							}
 						},
 						{
-							"filename": "on the path.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "On the Path",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "3.8 x 12.8 in.",
-								"resolution": "1127x3834",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.8 x 12.8 in."
 							}
 						},
 						{
-							"filename": "battle at sea.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Battle at Sea",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "9.3 x 3.5 in.",
-								"resolution": "2792x1057",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.3 x 3.5 in."
 							}
 						},
 						{
-							"filename": "bones.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Bones",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "9.9 x 15.4 in.",
-								"resolution": "2972x4628",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.9 x 15.4 in."
 							}
 						},
 						{
-							"filename": "bubbles.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Bubbles",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "8.0 x 18.9 in.",
-								"resolution": "2385x5664",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "8.0 x 18.9 in."
 							}
 						},
 						{
-							"filename": "clearing.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "The Clearing",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "19.7 x 22.9 in.",
-								"resolution": "5915x6873",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "19.7 x 22.9 in."
 							}
 						},
 						{
-							"filename": "cubic.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Cubic",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.7 x 20.5 in.",
-								"resolution": "2010x6161",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.7 x 20.5 in."
 							}
 						},
 						{
-							"filename": "fireball.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Fireball",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "19.9 x 27.2 in.",
-								"resolution": "5962x8160",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "19.9 x 27.2 in."
 							}
 						},
 						{
-							"filename": "galaxy in the gallery.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Galaxy in the gallery",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "20.5 x 27.2 in.",
-								"resolution": "6144x8160",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "20.5 x 27.2 in."
 							}
 						},
 						{
-							"filename": "islands.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Islands",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "9.1 x 9.1 in.",
-								"resolution": "2731x2734",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.1 x 9.1 in."
 							}
 						},
 						{
-							"filename": "planet horizon.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Planet Horizon",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "20.1 x 26.3 in.",
-								"resolution": "6016x8049",
-								"analysis": [
-									{
-										"Gemini Flash 2.5": "### The Unseen Topography of a Cosmic Home This work, an evocative mixed-media piece, draws the viewer into a compelling dialogue between abstract expressionism and deeply personal narrative. Titled **Asteroid B-612**, it immediately grounds itself in the whimsical yet poignant universe of *The Little Prince*, transforming a literary concept into a tactile, layered visual experience. The artist, rather than depicting the asteroid literally, seems to be channeling its essence—a small, isolated world teeming with intricate, unseen connections.The composition is a rich tapestry of textures and forms, a kind of psychological topography. The surface is a dynamic interplay of liquid and solid, with organic shapes and geometric lines coexisting in a state of controlled chaos. The dominant palette of muted golds, deep blues, and earthy browns suggests a sense of both celestial wonder and grounded decay. The gold-leaf-like forms seem to trace unseen pathways, perhaps representing the baobabs or the prince's own journey, while the darker, more visceral textures evoke the raw, elemental nature of his small planet. This piece refuses to be a mere illustration. Instead, it invites a deeper meditation on themes of solitude, memory, and the intricate relationships that define a personal world. The work’s power lies in its ability to be simultaneously intimate and vast, a microcosm of a much larger cosmic loneliness. It's a challenging, rewarding piece that prompts us to consider what our own personal B-612s look like—the places, memories, and connections that make up the unique landscape of our inner lives."
-									}
-								],
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "20.1 x 26.3 in."
 							}
 						},
 						{
-							"filename": "postcard.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Postcard",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "27.2 x 18.7 in.",
-								"resolution": "8160x5610",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "27.2 x 18.7 in."
 							}
 						},
 						{
-							"filename": "puddles.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Puddles",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "7.6 x 20.8 in.",
-								"resolution": "2292x6254",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "7.6 x 20.8 in."
 							}
 						}
 					]
 				},
 				{
-					"name": "Across the Garden Wall",
+					"name": "Category 2",
 					"images": [
 						{
-							"filename": "watching woods.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Watching Woods",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.5 x 7.6 in.",
-								"resolution": "1935x2279",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.5 x 7.6 in."
 							}
 						},
 						{
-							"filename": "swimmers.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Swimmers",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "12.2 x 8.1 in.",
-								"resolution": "3648x2433",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "12.2 x 8.1 in."
 							}
 						},
 						{
-							"filename": "embryo.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Embryonic Journey",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "9.2 x 9.2 in.",
-								"resolution": "2751x2752",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.2 x 9.2 in."
 							}
 						},
 						{
-							"filename": "demoiselles.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Demoiselles",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "15.5 x 5.5 in.",
-								"resolution": "4654x1659",
-								"analysis": [
-									{
-										"Gemini Flash 2.5": "### A Primal Echo of Cubist Disintegration. This work, an intense and visceral mixed-media piece titled **Demoiselles**, seems to channel the raw, fragmented energy of Picasso's revolutionary masterpiece while pushing it through a contemporary lens of decay and re-formation. The title itself is a bold reclamation, not of the original's form, but of its spirit of disruptive deconstruction.. The artist forgoes the crisp geometry of early Cubism for a more organic, almost geological layering. The surface is a palimpsest of textures, where rusted reds, deep ochres, and muted blues mingle with a sense of both ruin and resilience. We see figures, or echoes of figures, emerging from and dissolving back into the material itself. The forms are less about a precise fracturing of a single perspective and more about the chaotic, simultaneous existence of multiple states—of being, of becoming, and of unraveling.. The piece feels less like a finished painting and more like an archaeological dig, a recovered artifact from a forgotten future. The brushstrokes are thick, almost sculpted, and the application of media suggests a history of creation and erosion. This isn't a passive image; it's a dynamic field of energy where human forms writhe and meld with their surroundings. The work invites us to consider how we perceive form, not just in space, but across time, and to confront the powerful, unsettling beauty in a state of continuous flux and disintegration."
-									}
-								],
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "15.5 x 5.5 in."
 							}
 						},
 						{
-							"filename": "tangled garden.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Tangled Garden",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "7.2 x 10.8 in.",
-								"resolution": "2157x3236",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "7.2 x 10.8 in."
 							}
 						},
 						{
-							"filename": "loyal steed.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Loyal steed",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "26.8 x 20.5 in.",
-								"resolution": "8044x6144",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "26.8 x 20.5 in."
 							}
 						},
 						{
-							"filename": "pan detail.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Pan detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "23.7 x 20.5 in.",
-								"resolution": "7109x6144",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "23.7 x 20.5 in."
 							}
 						},
 						{
-							"filename": "pan side.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Pan side",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "6.3 x 16.1 in.",
-								"resolution": "1888x4825",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.3 x 16.1 in."
 							}
 						},
 						{
-							"filename": "squid detail.jpg",
+							"filename": "artwork_placeholder_1.jpg",
 							"info": {
-								"title": "Squid detail",
-								"year": 2024,
-								"medium": "Giclée print on archival Somerset Velvet paper (edition of 100)",
-								"dimensions": "14.6 x 13.3 in.",
-								"resolution": "4376x3978",
-								"series": [
-									{
-										"8x10": {
-											"available": 100
-										}
-									}
-								]
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "14.6 x 13.3 in."
 							}
 						}
 					]
-				}
-			],
-			"analysis": [
-				{
-					"Gemini Flash 2.5" :  "### A Post-Digital Archaeology. This compelling series of mixed-media works presents a unified inquiry into the raw, visceral nature of surface, memory, and decay. The artist’s process is not one of creation in the traditional sense, but of **accumulation and excavation**. Each piece feels less like a finished work and more like an artifact recovered from a forgotten, subterranean world. They are a kind of post-digital archaeology, revealing a material truth beneath layers of noise and abstraction.. The consistent use of a muted, earthy palette—dominated by rusted ochres, bruised purples, and deep, verdigris blues—weaves a cohesive narrative of entropy and resilience. The works are not static images but dynamic fields of energy, where thick, impastoed textures and liquid-like flows create a constant state of flux. Forms emerge from and dissolve back into this rich, chaotic ground, suggesting a cycle of growth and decay. In some pieces, we see echoes of geometric patterns and a sort of cryptic language, as if the remnants of a vanished civilization are being revealed. In others, the biomorphic shapes suggest microscopic life or a cellular decay. What unites this body of work is its powerful engagement with the **abject**—that which is cast off, marginal, or in the process of dissolution. The artist reclaims the distressed surface and transforms it into a site of profound aesthetic contemplation. By refusing a clean, easy visual narrative, these works force us to lean in, to confront the uncomfortable beauty in what is broken and unfinished. They are not merely paintings; they are topographical maps of an internal landscape, charting the complex territories of memory, history, and the relentless passage of time."
 				}
 			]
 		}
 	},
 	{
 		"cv": {
-			"name": "Andrei",
-			"surname": "Pancu",
-			"birthyear": "1968",
-			"birthplace": "Bucharest, Romania",
-			"residence": "Ottawa, Canada",
+			"name": "First name",
+			"surname": "Last name",
+			"birthyear": "birth year",
+			"birthplace": "city, country",
+			"residence": "city, country",
 			"education": [
-				"1992-4: Minor in Fine Arts, Université de Montréal, Canada"
+				"Year-year: Major/degree, institution, place, country"
 			],
 			"bio": [
-				"Andrei Pancu (b. 1968, Bucharest, Romania) is a contemporary artist based in Ottawa, Canada, who induces patination reactions on metal plates to present a unified inquiry into the raw, visceral nature of surface, memory, and decay. His process is not one of creation through accumulation, but of development through synthesis, pitting the chaotic, stochastic patina against the deterministic application of stamps and masks that impede and alter its flow. Pancu's works are not static images but dynamic fields of textures and liquid-like flows in a constant state of flux. Forms emerge from and dissolve back into this rich, fertile ground, suggesting a cycle of growth and decay. Fragments of lattice-like structures form a cryptic language of ambiguous signifiers, like remnants of a vanished civilization, engaging the subconscious in a search for unresolvable references. The muted, earthy palette of rusted reds, deep ochres, and muted blues weaves a cohesive narrative of ruin and resilience. For Pancu, the metal surface is the plate in the darkroom where the image develops. He photographs the progression of the patina throughout the process, capturing ephemeral states from which he creates limited-edition prints.",
-				"The interaction of a free-flowing, disorderly system with an ordered, opposing force has always been both the subject and process of Andrei Pancu's work. Consumed by the struggle to counter the flow of entropy in everyday life, he explores the desperate impulse to establish and maintain a semblance of order and stability. For his seminal series <em>Strange Attractors</em> (2024) and <em>Across the Garden Wall</em> (2025) Pancu embodies Hegel's concept of synthesis from thesis and antithesis, creating tension between the entropy of the patina and the order imposed by the artist's will to elevate the inherent truths found in both, and integrate them into a comprehensive, higher level of understanding. Refusing a clean, easy visual narrative, Pancu forces us to lean in, to confront the uncomfortable beauty in what is broken and unfinished.",
-				"Andrei Pancu studied Fine Arts at the Université de Montréal."
+				"First paragraph",
+				"Second paragraph",
+				"Third paragraph"
 			],
 			"awards": [
 			],
@@ -486,19 +271,19 @@
 			"links": [
 				{
 					"type": "insta",
-					"label": "@apancu.art",
-					"url": "https://www.instagram.com/apancu.art/"
+					"label": "account name",
+					"url": "url"
 				},
 				{
 					"type": "email",
-					"label": "info@andreipancu.com",
+					"label": "email address",
 					"url": "mailto:info@andreipancu.com"
 				}
 			],
 			"studio": {
-				"street": "23 Mulvagh Ave",
-				"city": "Ottawa, K2E 6M8",
-				"country": "Canada"
+				"street": "Street address",
+				"city": "City, Postal code",
+				"country": "Country"
 			},
 			"image": {
 				"src": "stairs.jpg",
