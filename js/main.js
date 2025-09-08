@@ -348,7 +348,7 @@ async function loadArtworks() {
                 studio.appendChild(element);
 
                 const image = document.querySelector('.contact-image');
-                image.src = `/images/${entry.contact.image.src}`;
+                image.src = `./images/${entry.contact.image.src}`;
                 image.alt = entry.contact.image.alt;
             }
         }
@@ -416,13 +416,13 @@ function createArtworkElement(filename, artworkInfo, container) {
 
     // Use thumbnail for grid
     const artworkImage = document.createElement('img');
-    artworkImage.src = `/images/works/thumbs/${filename}`;
+    artworkImage.src = `./images/works/thumbs/${filename}`;
     artworkImage.alt = baseName;
     artworkImage.className = 'artwork-image';
     artworkImage.loading = 'lazy'; // Enable lazy loading
 
     // Store full-size image path for modal use
-    artworkImage.dataset.fullsize = `/images/works/${filename}`;
+    artworkImage.dataset.fullsize = `./images/works/${filename}`;
 
     artworkFrame.appendChild(artworkImage);
 
