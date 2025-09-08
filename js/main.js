@@ -335,7 +335,8 @@ async function loadArtworks() {
                         if (link.type == "email") {
                             url = `mailto:${link.label}`;
                         } else if (link.type == "instagram") {
-                            url = `https://www.instagram.com/${link.label}`;
+                            let label = link.label.replace('@', '');
+                            url = `https://www.instagram.com/${label}`;
                         }
                         anchor.href = url;
                         element.appendChild(anchor);
