@@ -1,6 +1,5 @@
 
 @media (max-width: 840px) {
-
     .column-grid {
         flex-direction: column;
         gap: 0;

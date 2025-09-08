@@ -174,7 +174,8 @@ async function loadArtworks() {
     window.addEventListener('click', (event) => {
         if (event.target === modalBackdrop) {
             modalBackdrop.style.display = 'none';
-            if (window.innerWidth <= 720) {
+            let width = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--mobile-burger-breakpoint') ?? 724);
+            if (window.innerWidth <= width) {
                 let burgerMenu = document.querySelector('.burger-menu');
                 burgerMenu.style.display = 'flex';
             }
@@ -183,7 +184,8 @@ async function loadArtworks() {
 
     closeButton.addEventListener('click', () => {
         modalBackdrop.style.display = 'none';
-        if (window.innerWidth <= 720) {
+        let width = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--mobile-burger-breakpoint') ?? 724);
+        if (window.innerWidth <= width) {
             let burgerMenu = document.querySelector('.burger-menu');
             burgerMenu.style.display = 'flex';
         }
