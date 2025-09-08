@@ -247,8 +247,8 @@
 	},
 	{
 		"cv": {
-			"name": "First name",
-			"surname": "Last name",
+			"name": "Name",
+			"surname": "Surname",
 			"birthyear": "birth year",
 			"birthplace": "city, country",
 			"residence": "city, country",
