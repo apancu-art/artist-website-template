@@ -376,8 +376,6 @@ async function loadArtworks() {
 
             element.addEventListener('touchend', function (event) {
 
-                event.preventDefault();
-
                 if (!touchMoved) {
                     updateModalContent(element);
                 }
@@ -438,51 +436,58 @@ function createArtworkElement(filename, artworkInfo, container) {
 
 function updateModalContent(element) {
 
-    const modalBackdrop = document.querySelector('.modal-backdrop');
-    const modalContainer = document.querySelector('.modal-artwork-container');
-
-    // Find the parent grid of the clicked artwork
     const artworkGrid = element.closest('.artwork-grid');
-    const grids = Array.from(document.querySelectorAll('.artwork-grid'));
-    const gridIndex = grids.indexOf(artworkGrid);
-        
-    // Find the index of the artwork in its grid
-    const index = Array.from(artworkGrid.children).indexOf(element.parentElement);
-    const count = artworkGrid.children.length - 1;
+    const computedStyles = window.getComputedStyle(artworkGrid);
+    const gridTemplateColumns = computedStyles.getPropertyValue('grid-template-columns');
 
-    // Update modal content with the clicked artwork's data
-    const artworkImage = element.querySelector('.artwork-image');
-    const modalImage = document.createElement('img');
+    // only show modal if there is more than one column
+    if (gridTemplateColumns.includes(" ")) {
 
-    modalContainer.innerHTML = '';
+        const modalBackdrop = document.querySelector('.modal-backdrop');
+        const modalContainer = document.querySelector('.modal-artwork-container');
 
-    // Use full-size image for modal
-    modalImage.src = artworkImage.dataset.fullsize || artworkImage.src;
-    modalImage.alt = artworkImage.alt;
-    modalImage.className = 'modal-artwork-image';
+        // Find the parent grid of the clicked artwork
+        const grids = Array.from(document.querySelectorAll('.artwork-grid'));
+        const gridIndex = grids.indexOf(artworkGrid);
 
-    modalContainer.appendChild(modalImage);
+        // Find the index of the artwork in its grid
+        const index = Array.from(artworkGrid.children).indexOf(element.parentElement);
+        const count = artworkGrid.children.length - 1;
 
-    let prev = index - 1;
-    let next = index + 1;
-    if (prev < 0) prev = count;
-    if (next > count) next = 0;
+        // Update modal content with the clicked artwork's data
+        const artworkImage = element.querySelector('.artwork-image');
+        const modalImage = document.createElement('img');
 
-    // Set navigation button indices and store the grid index as a data attribute
-    const prevBtnEl = document.querySelectorAll('.nav-btn.prev-btn')[0];
-    const nextBtnEl = document.querySelectorAll('.nav-btn.next-btn')[0];
-    prevBtnEl.setAttribute("index", prev);
-    nextBtnEl.setAttribute("index", next);
-    prevBtnEl.setAttribute("data-grid", gridIndex);
-    nextBtnEl.setAttribute("data-grid", gridIndex);
-    prevBtnEl.style.display = 'block';
-    nextBtnEl.style.display = 'block';
+        modalContainer.innerHTML = '';
 
-    // Display the modal
-    modalBackdrop.style.display = 'flex';
+        // Use full-size image for modal
+        modalImage.src = artworkImage.dataset.fullsize || artworkImage.src;
+        modalImage.alt = artworkImage.alt;
+        modalImage.className = 'modal-artwork-image';
 
-    let burgerMenu = document.querySelector('.burger-menu');
-    burgerMenu.style.display = 'none';
+        modalContainer.appendChild(modalImage);
+
+        let prev = index - 1;
+        let next = index + 1;
+        if (prev < 0) prev = count;
+        if (next > count) next = 0;
+
+        // Set navigation button indices and store the grid index as a data attribute
+        const prevBtnEl = document.querySelectorAll('.nav-btn.prev-btn')[0];
+        const nextBtnEl = document.querySelectorAll('.nav-btn.next-btn')[0];
+        prevBtnEl.setAttribute("index", prev);
+        nextBtnEl.setAttribute("index", next);
+        prevBtnEl.setAttribute("data-grid", gridIndex);
+        nextBtnEl.setAttribute("data-grid", gridIndex);
+        prevBtnEl.style.display = 'block';
+        nextBtnEl.style.display = 'block';
+
+        // Display the modal
+        modalBackdrop.style.display = 'flex';
+
+        let burgerMenu = document.querySelector('.burger-menu');
+        burgerMenu.style.display = 'none';
+    }
 }
 
 function showSection(hash, sections, navLinks, mobileMenu) {

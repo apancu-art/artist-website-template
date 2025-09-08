@@ -11,7 +11,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 724px) {
 
     .navbar-right {
         display: none;
@@ -29,6 +29,14 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 658px) {
+
+    .artwork-container {
+        cursor: default;
+    }
+}
+
 
 @media (max-width: 540px) {
 
@@ -61,7 +69,7 @@
     }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 724px) {
 
     .mobile-menu {
         display: none !important;
