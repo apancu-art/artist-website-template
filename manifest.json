@@ -232,6 +232,146 @@
 							}
 						}
 					]
+				},
+				{
+					"name": "Category 3",
+					"images": [
+						{
+							"filename": "artwork_placeholder_1.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "5.5 x 10.4 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_9.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.7 x 12.8 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_16.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.5 x 10.8 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_20.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.7 x 26.5 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_25.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "3.8 x 12.8 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_30.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.3 x 3.5 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_35.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.9 x 15.4 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_1.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "8.0 x 18.9 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_9.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "19.7 x 22.9 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_16.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "6.7 x 20.5 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_20.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "19.9 x 27.2 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_25.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "20.5 x 27.2 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_30.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "9.1 x 9.1 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_35.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "20.1 x 26.3 in."
+							}
+						},
+						{
+							"filename": "artwork_placeholder_1.png",
+							"info": {
+								"title": "Title",
+								"year": "Year",
+								"medium": "Medium/surface",
+								"dimensions": "27.2 x 18.7 in."
+							}
+						}
+					]
 				}
 			]
 		}
