@@ -25,8 +25,8 @@
 }
 
     .tab-btn.active {
-        color: black;
-        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 8px;
     }
 
 .artwork-grid {
@@ -167,8 +167,12 @@
     max-width: 700px;
 }
 
+.col-380 {
+    max-width: 380px;
+}
+
 .col-460 {
-    max-width: 460px;
+    max-width: 500px;
 }
 
 .image-column {
